@@ -1,21 +1,173 @@
-name: IP
-description: Unified block and elytra infinite parkour
-author: Creeper_可能c (aka. Maybe__c)
-contributors: [Efnilite]
+name: EternalParkour
+description: Infinite block, multiplayer and elytra parkour for Paper
+author: jaymingxyz
+contributors: [Efnilite, LostUmbrella58]
 version: '${project.version}'
-api-version: '1.21.11'
-main: dev.efnilite.ip.IP
-softdepend: [floodgate, Vault, PlaceholderAPI, Multiverse-Core, HolographicDisplays, Chunky]
+api-version: '26.3'
+main: io.github.jaymingxyz.eternalparkour.core.EternalParkour
+softdepend: [floodgate, Vault, PlaceholderAPI, Multiverse-Core]
 commands:
-  witp:
-    aliases: [parkour, ip]
+  eternalparkour:
+    aliases: [ep, parkour, witp]
     usage: /<command> [arguments]
-    description: Main command for Infinite Parkour
+    description: Main Eternal Parkour command
   ipp:
     aliases: [ipplus]
     usage: /<command> [arguments]
-    description: Compatibility command for the former IPPlus features
+    description: Multiplayer and extra modes (kept for compatibility with IPPlus)
   iep:
     aliases: [infiniteelytraparkour]
     usage: /<command> [arguments]
     description: Elytra parkour command
+
+# Every node below defaults to op, which is exactly how the previously undeclared
+# nodes behaved. Declaring them only makes them visible to permission plugins.
+# Block-parkour nodes are only checked when permissions.enabled is true in config.yml;
+# elytra nodes are only checked when permissions is true in elytra/config.yml.
+# Dynamic nodes (ip.gamemode.<mode>, ip.settings.styles.<style>, iep.setting.<setting>,
+# iep.setting.style.<style>, iep.leaderboard.<mode>) also default to op.
+permissions:
+  ip.*:
+    description: All block-parkour and multiplayer permissions
+    default: op
+    children:
+      ip.admin: true
+      ip.main: true
+      ip.play: true
+      ip.play.single: true
+      ip.play.spectator: true
+      ip.community: true
+      ip.community.leaderboards: true
+      ip.settings: true
+      ip.settings.parkour_settings: true
+      ip.settings.styles: true
+      ip.settings.leads: true
+      ip.settings.time: true
+      ip.settings.schematics: true
+      ip.settings.show_scoreboard: true
+      ip.settings.fall_message: true
+      ip.settings.particles: true
+      ip.settings.sound: true
+      ip.settings.special_blocks: true
+      ip.settings.lang: true
+      ip.settings.chat: true
+      ip.settings.practice_settings: true
+      ip.lobby: true
+      ip.lobby.visibility: true
+      ip.lobby.player_management: true
+      ip.join: true
+      ip.quit: true
+      ip.multiplayer: true
+      ip.active: true
+      ip.invite: true
+  ip.admin:
+    description: Reload, reset, force join/leave, inventory recovery and schematic tools
+    default: op
+  ip.main:
+    description: Open the main menu
+    default: op
+  ip.play:
+    description: Open the play menu
+    default: op
+  ip.play.single:
+    description: Open single-player mode selection
+    default: op
+  ip.play.spectator:
+    description: Open spectator selection
+    default: op
+  ip.community:
+    description: Open the community menu
+    default: op
+  ip.community.leaderboards:
+    description: View leaderboards
+    default: op
+  ip.settings:
+    description: Open the settings menu
+    default: op
+  ip.settings.parkour_settings:
+    description: Open the parkour settings submenu
+    default: op
+  ip.settings.styles:
+    description: Change block style
+    default: op
+  ip.settings.leads:
+    description: Change block lead
+    default: op
+  ip.settings.time:
+    description: Change time of day
+    default: op
+  ip.settings.schematics:
+    description: Change schematic difficulty
+    default: op
+  ip.settings.show_scoreboard:
+    description: Toggle the scoreboard
+    default: op
+  ip.settings.fall_message:
+    description: Toggle the fall message
+    default: op
+  ip.settings.particles:
+    description: Toggle particles
+    default: op
+  ip.settings.sound:
+    description: Toggle sounds
+    default: op
+  ip.settings.special_blocks:
+    description: Toggle special blocks
+    default: op
+  ip.settings.lang:
+    description: Change language
+    default: op
+  ip.settings.chat:
+    description: Change chat mode
+    default: op
+  ip.settings.practice_settings:
+    description: Open practice mode settings
+    default: op
+  ip.lobby:
+    description: Open the lobby menu
+    default: op
+  ip.lobby.visibility:
+    description: Change session visibility
+    default: op
+  ip.lobby.player_management:
+    description: Manage players in your session
+    default: op
+  ip.join:
+    description: Use the join command
+    default: op
+  ip.quit:
+    description: Use the quit item and leave command
+    default: op
+  ip.multiplayer:
+    description: Create multiplayer sessions
+    default: op
+  ip.active:
+    description: View active multiplayer lobbies
+    default: op
+  ip.invite:
+    description: Invite players to your session
+    default: op
+  iep.*:
+    description: All elytra permissions
+    default: op
+    children:
+      iep.play: true
+      iep.leaderboard: true
+      iep.setting: true
+      iep.setting.seed: true
+      iep.leave: true
+  iep.play:
+    description: Open the elytra play menu
+    default: op
+  iep.leaderboard:
+    description: Open the elytra leaderboard menu
+    default: op
+  iep.setting:
+    description: Open the elytra settings menu
+    default: op
+  iep.setting.seed:
+    description: Set an elytra seed
+    default: op
+  iep.leave:
+    description: Leave elytra parkour
+    default: op

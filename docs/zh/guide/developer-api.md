@@ -1,6 +1,6 @@
 # 开发者 API
 
-Java API 提供玩家/会话查询、注册表和 Bukkit 事件。将 Infinite Parkour Reborn 作为 compile-only/provided 依赖，并在你的插件元数据中声明依赖或软依赖。
+Java API 提供玩家/会话查询、注册表和 Bukkit 事件。将 Eternal Parkour 作为 compile-only/provided 依赖，并在你的插件元数据中声明依赖或软依赖。
 
 ## JitPack 依赖
 
@@ -15,8 +15,8 @@ Java API 提供玩家/会话查询、注册表和 Bukkit 事件。将 Infinite P
 </repository>
 
 <dependency>
-  <groupId>com.github.LostUmbrella58</groupId>
-  <artifactId>IP-Reborn</artifactId>
+  <groupId>com.github.jaymingxyz</groupId>
+  <artifactId>EternalParkour</artifactId>
   <version>VERSION</version>
   <scope>provided</scope>
 </dependency>
@@ -28,7 +28,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.LostUmbrella58:IP-Reborn:VERSION")
+    compileOnly("com.github.jaymingxyz:EternalParkour:VERSION")
 }
 ```
 
@@ -49,7 +49,7 @@ if (user != null) {
 
 ## Bukkit 事件
 
-`dev.efnilite.ip.api.event` 中提供：
+`io.github.jaymingxyz.eternalparkour.core.api.event` 中提供：
 
 - `ParkourJoinEvent`
 - `ParkourLeaveEvent`

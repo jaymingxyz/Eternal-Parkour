@@ -11,97 +11,98 @@ play:
     hourglass:
       material: "sand"
       name: "<#CFB410><bold>Zandloper"
-      lore: "<dark_gray>Je kan op maar voor een halve seconde op blokken staan"
+      lore: "<gray>Je kan op maar voor een halve seconde op blokken staan"
 
     practice:
       item:
         material: "white_wool"
         name: "<white><bold>Oefenen"
-        lore: "<dark_gray>Oefen verschillende combinaties van jumps"
+        lore: "<gray>Oefen verschillende combinaties van jumps"
 
       items:
         settings:
           material: "comparator"
           name: "<#E74FA1><bold>Oefeninstellingen"
-          lore: ""
+          lore: "<#FFD166>» Klik om te openen"
 
         one_block:
           material: ""
           name: "<bold>Een-blok jumps"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         two_block:
           material: ""
           name: "<bold>Twee-blok jumps"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         three_block:
           material: ""
           name: "<bold>Drie-blok jumps"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         four_block:
           material: ""
           name: "<bold>Vier-blok jumps"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         normal:
           material: ""
           name: "<bold>Normaal"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         schematics:
           material: ""
           name: "<bold>Schematics"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         ice:
           material: ""
           name: "<bold>IJs"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         slabs:
           material: ""
           name: "<bold>Slabs"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         glass_panes:
           material: ""
           name: "<bold>Dunne ramen"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
 
         fences:
           material: ""
           name: "<bold>Hekken"
-          lore: "<gray>Klik om deze instelling te veranderen."
+          lore: "<#FFD166>» Klik om aan of uit te zetten"
+      name: "Oefeninstellingen"
 
     wave_trial:
       material: "sand"
       name: "<#1882DE><bold>Golfproef"
-      lore: "<dark_gray>De trap op- en aflopen-simulator!"
+      lore: "<gray>De trap op- en aflopen-simulator!"
 
     speed:
       material: "lingering_potion"
       name: "<#1882DE><bold>Speed"
-      lore: "<dark_gray>Snelheid is de sleutel!"
+      lore: "<gray>Snelheid is de sleutel!"
 
     super_jump:
       material: "rabbit_foot"
       name: "<#08508E><bold>Super Jump"
-      lore: "<dark_gray>Spring van platform naar platform||<dark_gray>terwijl je sneller en sneller wordt||<red>Deze mode is erg moeilijk!"
+      lore: "<gray>Spring van platform naar platform||<gray>terwijl je sneller en sneller wordt||<red>Deze mode is erg moeilijk!"
 
     time_trial:
       material: "clock"
       name: "<#9A0BC7><bold>Time Trial"
-      lore: "<dark_gray>Haal zo snel mogelijk een score van 100."
+      lore: "<gray>Haal zo snel mogelijk een score van 100."
 
   multi:
-    name: "<white>Multiplayer"
+    name: "Multiplayer"
 
     item:
       material: "oak_boat"
       name: "<#0088CB><bold>Multiplayer"
-      lore: ""
+      lore: "<#FFD166>» Klik om een modus te kiezen"
 
     duels:
       go: "<#1BE3DD><bold>Go!||<reset><gray>De eerste persoon met een score van %d wint!"
@@ -114,7 +115,7 @@ play:
       item:
         material: "red_concrete"
         name: "<#C91212><bold>Duels"
-        lore: "<dark_gray>Race met je vrienden.||<dark_gray>De eerste bij 100 wint.||<dark_gray>Als iemand valt, moet die persoon terug naar het begin."
+        lore: "<gray>Race met je vrienden.||<gray>De eerste bij 100 wint.||<gray>Als iemand valt, moet die persoon terug naar het begin."
 
       start:
         material: "lime_banner"
@@ -124,15 +125,15 @@ play:
     team_survival:
       material: "poppy"
       name: "<#C91212><bold>Team Survival"
-      lore: "<dark_gray>Overleef zo lang mogelijk met je team.||<dark_gray>Iedereen moet terug naar het begin als iemand valt."
+      lore: "<gray>Overleef zo lang mogelijk met je team.||<gray>Iedereen moet terug naar het begin als iemand valt."
 
 active:
-  name: "<white>Lobby's"
+  name: "Lobby's"
 
   item:
     material: "chest"
     name: "<#EA9926><bold>Huidige lobby's bekijken"
-    lore: ""
+    lore: "<#FFD166>» Klik om te openen"
 
   head:
     material: ""
@@ -142,22 +143,29 @@ active:
   sort:
     material: "bookshelf"
     name: "<#DEA11F><bold>Sorteren"
-    lore: ""
+    lore: "<#FFD166>» Klik om te wijzigen"
 
   refresh:
     material: "blaze_powder"
     name: "<#2FBC11><bold>Verversen"
-    lore: ""
+    lore: "<#FFD166>» Klik om te vernieuwen"
+  lobby:
+    name: "Lobby van %s"
+    players: "<gray>Spelers: %s"
+    mode: "<gray>Modus: %s"
+    playing: "<gray>Speelt:"
+    spectating: "<gray>Kijkt toe:"
+    full: "» Vol, klik om toe te kijken"
 
 invite:
-  name: "<white>Klik om uit te nodigen"
+  name: "Spelers uitnodigen"
   message: "<gray>Je bent door <#F55252>%s<reset><gray> uitgenodigd voor hun <#F37777><bold>%s<reset><gray> game! <reset><gray>Klik of gebruik <#FAB4B4>/parkour join %s<reset><gray> om te joinen!"
   success: "<gray>Je hebt %s uitgenodigd."
 
   item:
     material: "elytra"
     name: "<#2B97E2><bold>Uitnodigen"
-    lore: ""
+    lore: "<#FFD166>» Klik om te openen"
 
   head:
     material: ""

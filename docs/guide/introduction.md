@@ -1,14 +1,14 @@
 # Introduction
 
-Infinite Parkour Reborn combines the gameplay of Infinite Parkour, IPPlus, and Infinite Elytra Parkour in one plugin. Infinite Parkour and the related original projects were created by Efnilite.
+Eternal Parkour combines the gameplay of Infinite Parkour, IPPlus, and Infinite Elytra Parkour in one plugin. Infinite Parkour and the related original projects were created by Efnilite.
 
 The plugin provides three command entry points:
 
-- `/parkour` (also `/ip` and `/witp`) for block parkour, settings, leaderboards, and administration.
+- `/ep` (also `/eternalparkour`, `/parkour` and `/witp`) for block parkour, settings, leaderboards, and administration.
 - `/ipp` for multiplayer lobbies and modes.
 - `/iep` for infinite elytra parkour.
 
-All generated data lives under `plugins/IP/`. Multiplayer files use `plugins/IP/plus/`, while elytra files use `plugins/IP/elytra/`.
+All generated data lives under `plugins/EternalParkour/`. Multiplayer files use `plugins/EternalParkour/plus/`, while elytra files use `plugins/EternalParkour/elytra/`.
 
 ## What is included
 

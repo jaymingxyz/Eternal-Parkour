@@ -1,6 +1,6 @@
 # Permissions
 
-Block-parkour and multiplayer permission checks are enabled with `permissions.enabled: true` in `plugins/IP/config.yml`. Elytra permissions are controlled separately by `permissions: true` in `plugins/IP/elytra/config.yml`. Administrative block-parkour commands always require `ip.admin`; elytra reset and schematic commands require operator status.
+Block-parkour and multiplayer permission checks are enabled with `permissions.enabled: true` in `plugins/EternalParkour/config.yml`. Elytra permissions are controlled separately by `permissions: true` in `plugins/EternalParkour/elytra/config.yml`. Administrative block-parkour commands always require `ip.admin`; elytra reset and schematic commands require operator status.
 
 ## Block parkour and menus
 

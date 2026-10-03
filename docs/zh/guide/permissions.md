@@ -1,6 +1,6 @@
 # 权限
 
-在 `plugins/IP/config.yml` 中设置 `permissions.enabled: true` 后，方块跑酷和多人模式才会检查普通权限。鞘翅权限由 `plugins/IP/elytra/config.yml` 的 `permissions: true` 单独控制。方块跑酷管理命令始终需要 `ip.admin`；鞘翅重置和模板命令需要 OP。
+在 `plugins/EternalParkour/config.yml` 中设置 `permissions.enabled: true` 后，方块跑酷和多人模式才会检查普通权限。鞘翅权限由 `plugins/EternalParkour/elytra/config.yml` 的 `permissions: true` 单独控制。方块跑酷管理命令始终需要 `ip.admin`；鞘翅重置和模板命令需要 OP。
 
 ## 方块跑酷与菜单
 

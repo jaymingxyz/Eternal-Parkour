@@ -1,22 +1,13 @@
 #============================================#
-#..............####.########.................#
-#...............##..##.....##...##...........#
-#...............##..##.....##...##...........#
-#...............##..########..######.........#
-#...............##..##..........##...........#
-#...............##..##..........##...........#
-#..............####.##.......................#
-#============================================#
-
-#============================================#
 #                                            #
-#           (c) Efnilite 2020-2023           #
+#     Eternal Parkour: multiplayer modes     #
+#   Based on IPPlus (c) Efnilite 2020-2023   #
 #                                            #
 #============================================#
 
 # -= Send back after multiplayer =-
 # Whether players should be sent back to their previous data/location after they finish a multiplayer match.
-# If this is set to false, they will join a regular singleplayer IP game.
+# If this is set to false, they will join a regular single-player game.
 send_back_after_multiplayer: false
 
 # -= Mode options =-

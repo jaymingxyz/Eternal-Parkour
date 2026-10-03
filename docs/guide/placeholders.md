@@ -1,48 +1,50 @@
 # PlaceholderAPI
 
-Install PlaceholderAPI and restart the server. The expansions are registered by Infinite Parkour Reborn; no separate eCloud download is required.
+Install PlaceholderAPI and restart the server. The expansions are registered by Eternal Parkour; no separate eCloud download is required.
 
-## Block parkour: `witp`
+## Block parkour: `eternalparkour`
+
+The old `witp` prefix still works, so `%witp_score%` and `%eternalparkour_score%` show the same value.
 
 ### General and player values
 
 | Placeholder | Value |
 | --- | --- |
-| `%witp_version%` | Plugin version |
-| `%witp_leader%` | Default-mode record holder |
-| `%witp_leader_score%` | Default-mode record score |
-| `%witp_rank%` | Player's default-mode rank |
-| `%witp_highscore%` | Player's default-mode high score |
-| `%witp_high_score_time%` | Time attached to that high score |
-| `%witp_score%` | Current score |
-| `%witp_time%` | Current formatted run time |
-| `%witp_blocklead%` | Current block lead |
-| `%witp_style%` | Current style key |
-| `%witp_time_preference%` | Selected world time |
-| `%witp_scoreboard%` | Whether the scoreboard is enabled |
-| `%witp_difficulty%` | Numeric schematic difficulty |
-| `%witp_difficulty_string%` | Easy, medium, hard, or very hard |
-| `%witp_score_until_100%` | Points remaining until the next multiple of 100 |
+| `%eternalparkour_version%` | Plugin version |
+| `%eternalparkour_leader%` | Default-mode record holder |
+| `%eternalparkour_leader_score%` | Default-mode record score |
+| `%eternalparkour_rank%` | Player's default-mode rank |
+| `%eternalparkour_highscore%` | Player's default-mode high score |
+| `%eternalparkour_high_score_time%` | Time attached to that high score |
+| `%eternalparkour_score%` | Current score |
+| `%eternalparkour_time%` | Current formatted run time |
+| `%eternalparkour_blocklead%` | Current block lead |
+| `%eternalparkour_style%` | Current style key |
+| `%eternalparkour_time_preference%` | Selected world time |
+| `%eternalparkour_scoreboard%` | Whether the scoreboard is enabled |
+| `%eternalparkour_difficulty%` | Numeric schematic difficulty |
+| `%eternalparkour_difficulty_string%` | Easy, medium, hard, or very hard |
+| `%eternalparkour_score_until_100%` | Points remaining until the next multiple of 100 |
 
-Aliases include `%witp_ver%`, `%witp_record_player%`, `%witp_record_score%`, `%witp_record%`, `%witp_high_score%`, `%witp_current_score%`, `%witp_current_time%`, `%witp_lead%`, and `%witp_time_pref%`.
+Aliases include `%eternalparkour_ver%`, `%eternalparkour_record_player%`, `%eternalparkour_record_score%`, `%eternalparkour_record%`, `%eternalparkour_high_score%`, `%eternalparkour_current_score%`, `%eternalparkour_current_time%`, `%eternalparkour_lead%`, and `%eternalparkour_time_pref%`.
 
 ### Ranked values
 
 Replace `<rank>` with a positive position:
 
 ```text
-%witp_player_rank_<rank>%
-%witp_score_rank_<rank>%
-%witp_time_rank_<rank>%
-%witp_difficulty_rank_<rank>%
-%witp_difficulty_string_rank_<rank>%
+%eternalparkour_player_rank_<rank>%
+%eternalparkour_score_rank_<rank>%
+%eternalparkour_time_rank_<rank>%
+%eternalparkour_difficulty_rank_<rank>%
+%eternalparkour_difficulty_string_rank_<rank>%
 ```
 
 Insert a mode key before the rank for a mode-specific leaderboard. For example:
 
 ```text
-%witp_player_rank_speed_1%
-%witp_score_rank_team_survival_3%
+%eternalparkour_player_rank_speed_1%
+%eternalparkour_score_rank_team_survival_3%
 ```
 
 ## Elytra parkour: `iep`

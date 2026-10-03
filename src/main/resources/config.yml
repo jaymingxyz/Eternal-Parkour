@@ -1,19 +1,9 @@
 #===============================================================================#
 #                                                                               #
-#                                   88  88888888ba                              #
-#                                   88  88      "8b                             #
-#                                   88  88      ,8P                             #
-#                                   88  88aaaaaa8P'                             #
-#                                   88  88""""""'                               #
-#                                   88  88                                      #
-#                                   88  88                                      #
-#                                   88  88                                      #
+#                                Eternal Parkour                                #
 #                                                                               #
-#===============================================================================#
-
-#===============================================================================#
-#                                                                               #
-#                           (c) Efnilite 2020-2024                              #
+#     Based on Infinite Parkour (c) Efnilite 2020-2024 and Infinite Parkour     #
+#           Reborn by LostUmbrella58. Licensed under GPL-3.0.                   #
 #                                                                               #
 #===============================================================================#
 
@@ -22,10 +12,18 @@ debug: false
 
 # -= Enable joining =-
 # Whether players can join the parkour.
-# When joining is disabled, the IP instance on this server will only read data from leaderboard databases.
+# When joining is disabled, the Eternal Parkour instance on this server will only read data from leaderboard databases.
 # Set joining to false if you want to create a cross-server leaderboard on this server.
 # true = players can join, false = players can't join.
 joining: true
+
+# -= Modules =-
+modules:
+
+  # -= Elytra parkour =-
+  # Enables the elytra parkour modes (/iep). These use a second void world named 'iep'.
+  # Changing this requires a restart.
+  elytra: true
 
 # -= Proxy options =-
 # Change the proxy settings. Applies to Velocity as well.
@@ -78,13 +76,14 @@ sql:
   # -= MySQL settings =-
   url: 'localhost'
   port: 3306
-  username: 'efnilite'
-  password: 'super secret password'
-  database: 'ip'
+  username: 'minecraft'
+  password: 'change-me'
+  database: 'eternalparkour'
 
   # -= MySQL prefix =-
   # The prefix given to any table names
-  # The default is ''. Example: 'ip-' -> this would make the table 'ip-players'
+  # The default is ''. Example: 'ep_' -> this would make the table 'ep_options'.
+  # May only contain letters, digits, _ and -.
   prefix: ''
 
 # -= World options =-
@@ -145,10 +144,11 @@ options:
   inventory-handling: true
 
   # -= Inventory saving =-
-  # Logs inventories of the players that join to the inventories/ folder.
-  # It is highly recommended to keep this enabled. Server crashes or errors while leaving might cause
-  # inventories of players to be lost if this is set to false!
-  # Use /ip recoverinventory to recover inventories of players who joined the parkour and who lost their inventories in a crash, etc.
+  # Backs up each player's inventory, location, gamemode, hunger, flight and effects to the backups/ folder
+  # when they join block or elytra parkour, and deletes the backup once they've got everything back.
+  # If the server stops without shutting down cleanly, the backup is restored automatically the next time
+  # the player joins. /ep recoverinventory <player> can restore it by hand.
+  # It is highly recommended to keep this enabled: with it off, a crash loses the inventories of everyone playing.
   inventory-saving: true
 
   # -= Alternate inventory saving command =-
@@ -164,7 +164,7 @@ options:
 
 # -= Permissions options =-
 # These permissions are used to determine which things the player can change.
-# Find them at https://efnilite.dev/projects/ip/wiki
+# See https://jaymingxyz.github.io/EternalParkour/guide/permissions
 permissions:
 
   # -= Permissions enabled =-
@@ -183,16 +183,16 @@ permissions:
 focus-mode:
 
   # -= Focus mode enabled =-
-  # If focus mode is enabled players can't use commands while in parkour.
-  # Note: this might not work on all commands because Minecraft.
+  # If focus mode is enabled, players in block or elytra parkour can only use this plugin's commands
+  # and the commands in the whitelist below.
+  # On survival servers this also stops players using other plugins' commands (auction houses, trades)
+  # on the items parkour hands out.
   enabled: false
 
-  # -=
-  # A whitelist for commands which ARE allowed during focus mode (if focus mode is enabled).
-  # If you want to disable the default whitelisted commands you can remove every item in the list below.
+  # -= Focus mode whitelist =-
+  # Commands that ARE allowed during focus mode, by name, without arguments: 'msg' allows /msg and
+  # /essentials:msg, but not /msgtoggle. This plugin's own commands are always allowed.
   whitelist:
-    - 'ip'
-    - 'parkour'
     - 'msg'
     - 'r'
     - 'w'
@@ -250,14 +250,15 @@ particles:
 
   # -= Particle type =-
   # The type of particle that will appear when a new block generates.
-  # You can find all types at https://jd.papermc.io/paper/26.1.2/org/bukkit/Particle.html
+  # You can find all types at https://jd.papermc.io/paper/26.3/org/bukkit/Particle.html
   # (SPELL_INSTANT was renamed to INSTANT_EFFECT in 1.21.)
   particle-type: 'INSTANT_EFFECT'
 
   # -= Sound type =-
   # The sound that will play when a new block generates.
-  # You can find all sounds at https://jd.papermc.io/paper/26.1.2/org/bukkit/Sound.html
-  sound-type: 'BLOCK_NOTE_BLOCK_GUITAR'
+  # Use a sound key, like 'block.note_block.guitar' (see https://minecraft.wiki/w/Sounds.json).
+  # Old names like 'BLOCK_NOTE_BLOCK_GUITAR' still work.
+  sound-type: 'block.note_block.guitar'
 
   # -= Sound pitch =-
   # The pitch of the sound that will play when a new block generates.

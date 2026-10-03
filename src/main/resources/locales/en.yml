@@ -7,31 +7,31 @@
 name: "English"
 
 main:
-  name: "<white>Parkour"
+  name: "Eternal Parkour"
 
 play:
-  name: "<white>Play"
+  name: "Play"
 
   item:
     material: "sugar_cane"
     name: "<#60EB76><bold>Play"
-    lore: ""
+    lore: "<gray>Pick a mode and start a run.||||<#FFD166>» Click to open"
 
   single:
-    name: "<white>Single"
+    name: "Single-player"
 
     item:
       material: "ender_pearl"
       name: "<#6E92B1><bold>Single-player"
-      lore: ""
+      lore: "<gray>Endless parkour on your own.||||<#FFD166>» Click to choose"
 
     default:
       material: "barrel"
       name: "<#6693E7><bold>Default"
-      lore: "<dark_gray>The default gamemode."
+      lore: "<gray>The classic endless parkour."
 
   spectator:
-    name: "<white>Spectator"
+    name: "Spectate"
 
     join: "<#4CB3FF>You are now a spectator. You can use \"/parkour\" to leave/change your gamemode."
     action_bar: "<#4CB3FF>You are a spectator <gray>• <#4CB3FF>Use \"/parkour\" to leave."
@@ -42,7 +42,7 @@ play:
     item:
       material: "glass"
       name: "<#39D5AB><bold>Spectator"
-      lore: ""
+      lore: "<gray>Watch another player's run.||||<#FFD166>» Click to choose"
 
     head:
       material: ""
@@ -50,20 +50,20 @@ play:
       lore: ""
 
 community:
-  name: "<white>Community"
+  name: "Community"
 
   item:
     material: "oak_boat"
     name: "<#60C9DF><bold>Community"
-    lore: ""
+    lore: "<gray>Leaderboards and open lobbies.||||<#FFD166>» Click to open"
 
   leaderboards:
-    name: "<white>Leaderboards"
+    name: "Leaderboards"
 
     item:
       material: "gold_nugget"
       name: "<#6693E7><bold>Leaderboards"
-      lore: ""
+      lore: "<gray>The best runs of every mode.||||<#FFD166>» Click to open"
 
     sort:
       material: "bookshelf"
@@ -75,27 +75,28 @@ community:
       material: ""
       name: "<#6693E7><bold>#%r - %p"
       lore: "<#5574AF>Score: <gray>%s||<#5574AF>Time: <gray>%t||<#5574AF>Difficulty: <gray>%d<dark_gray>/1.0"
+    title: "Leaderboard · %s"
 
 settings:
-  name: "<white>Settings"
+  name: "Settings"
 
   item:
     material: "comparator"
     name: "<#6086EB><bold>Settings"
-    lore: ""
+    lore: "<gray>Your language, chat and parkour.||||<#FFD166>» Click to open"
 
   lang:
-    name: "<white>Language"
+    name: "Language"
 
     item:
       material: "writable_book"
       name: "<#6693E7><bold>Language"
-      lore: "<dark_gray>Currently: <#5574AF><bold>%s"
+      lore: "<gray>Currently: <white>%s||||<#FFD166>» Click to change"
 
   chat:
     material: "crossbow"
     name: "<#20C6BC><bold>Chat"
-    lore: "<dark_gray>Currently: <#17B2CE><bold>%s||<dark_gray>Select who you can chat with"
+    lore: "<gray>Currently: <white>%s||<gray>Who you can chat with.||||<#FFD166>» Click to change"
     values: ["lobby only", "players only", "public"]
 
     formats:
@@ -110,7 +111,7 @@ settings:
     item:
       material: "redstone"
       name: "<#A10404><bold>Parkour Settings"
-      lore: "<dark_gray>Change the way your parkour appears."
+      lore: "<gray>How your parkour looks and plays.||||<#FFD166>» Click to open"
 
     items:
 
@@ -120,44 +121,44 @@ settings:
         lore: "<gray>You have a score above 0,||<gray>which means you cant change this setting."
 
       styles:
-        name: "<white>Styles"
+        name: "Styles"
 
         style_item:
           material: ""
           name: "<white><bold>%s"
-          lore: "<#5574AF>Category: <gray>%s"
+          lore: "<gray>Category: <white>%s"
 
         item:
           material: "crafting_table"
           name: "<#6693E7><bold>Style"
-          lore: "<#5574AF>Currently: <gray>%s||<gray>Choose which blocks will be used."
+          lore: "<gray>Currently: <white>%s||<gray>The blocks your parkour is made of.||||<#FFD166>» Click to choose"
 
       leads:
         material: "feather"
         name: "<#6693E7><bold>Lead"
-        lore: "<#5574AF>Currently: <gray>%s blocks||<gray>How many blocks will||<gray>be generated in front of you."
+        lore: "<gray>Currently: <white>%s blocks||<gray>How many blocks are generated||<gray>ahead of you.||||<#FFD166>» Click to change"
 
       time:
         material: "clock"
         name: "<#6693E7><bold>Time"
-        lore: "<#5574AF>Currently: <gray>%s||<gray>Your current visual time."
+        lore: "<gray>Currently: <white>%s||<gray>The time of day you see.||||<#FFD166>» Click to change"
 
       schematics:
         material: ""
         name: "<#6693E7><bold>Schematic difficulty"
-        lore: "<#5574AF>Currently: <gray>%s||<gray>The difficulty of schematics"
+        lore: "<gray>Currently: %s||<gray>How hard the structures are.||||<#FFD166>» Click to change"
         values: ["<red>off", "<#0DCB07>easy", "<yellow>medium", "<#FF6C17>hard", "<dark_red>very hard"]
 
       scoreboard:
         material: ""
         name: "Show scoreboard"
-        lore: "<gray>Currently: %s||<gray>If enabled shows the scoreboard."
+        lore: "<gray>Currently: %s||<gray>Your score and time on the side.||||<#FFD166>» Click to toggle"
 
       fall_message:
         item:
           material: ""
           name: "Show fall message"
-          lore: "<gray>Currently: %s||<gray>If enabled shows a message when you fall||<gray>with extra info."
+          lore: "<gray>Currently: %s||<gray>Your score and time when you fall.||||<#FFD166>» Click to toggle"
 
         divider: "<dark_gray><strikethrough>-----------------------------------"
         score: "<#80C7FD><bold>Score <reset><white>%s"
@@ -172,25 +173,26 @@ settings:
       particles:
         material: ""
         name: "Show particles"
-        lore: "<gray>Currently: %s||<gray>If enabled, every generated block||<gray>will show particles."
+        lore: "<gray>Currently: %s||<gray>Particles around every new block.||||<#FFD166>» Click to toggle"
 
       sound:
         material: ""
         name: "Play sounds"
-        lore: "<gray>Currently: %s||<gray>If enabled, every generated block||<gray>will play a sound."
+        lore: "<gray>Currently: %s||<gray>A sound for every new block.||||<#FFD166>» Click to toggle"
 
       special_blocks:
         material: ""
         name: "Use special blocks"
-        lore: "<gray>Currently: %s||<gray>If enabled, uses special blocks like ice and slabs."
+        lore: "<gray>Currently: %s||<gray>Ice, slabs, glass panes and fences.||||<#FFD166>» Click to toggle"
 
       score_difficulty:
         material: ""
         name: "Score difficulty"
-        lore: "<gray>Currently: %s||<gray>When enabled, the higher score you have,||<gray>the more difficult it gets."
+        lore: "<gray>Currently: %s||<gray>The higher your score,||<gray>the harder it gets.||||<#FFD166>» Click to toggle"
+    name: "Parkour settings"
 
 lobby:
-  name: "<white>Lobby"
+  name: "Your lobby"
 
   other_join: '<dark_green><bold>+ <reset><gray>%s joined your lobby'
   other_leave: '<red><bold>- <reset><gray>%s left your lobby'
@@ -198,16 +200,16 @@ lobby:
   item:
     material: "iron_ingot"
     name: "<#EB608C><bold>Your Lobby"
-    lore: ""
+    lore: "<gray>Invite players and choose||<gray>who can join.||||<#FFD166>» Click to open"
 
   visibility:
     material: "firework_rocket"
     name: "<#A1E1DD><bold>Visibility"
-    lore: "<dark_gray>Currently: <#2BD4E2><bold>%s||<dark_gray>Select who can join your lobby."
+    lore: "<gray>Currently: <white>%s||<gray>Who can join your lobby.||||<#FFD166>» Click to change"
     values: ["private", "invite-only", "public"]
 
   player_management:
-    name: "<white>Manage players"
+    name: "Manage players"
 
     kicked: "<gray>You've been kicked from your lobby by the lobby owner."
     advice: "<gray>Set your lobby visibility to invite-only or private to avoid people randomly joining."
@@ -217,18 +219,18 @@ lobby:
     item:
       material: "cake"
       name: "<#8DC9E5><bold>Manage Players"
-      lore: "<dark_gray>Kick or mute players here."
+      lore: "<gray>Kick or mute players.||||<#FFD166>» Click to open"
 
     head:
       material: ""
       name: "<#4BD16D><bold>%s"
       lore: ""
-      top: "<dark_gray>Muted in lobby||"
-      bottom: "<#8DE5A3>Left click<dark_gray> to kick from lobby||<#8DE5A3>Right click<dark_gray> to (un)mute in lobby"
+      top: "<red>Muted||"
+      bottom: "<#FFD166>Left-click <gray>to kick||<#FFD166>Right-click <gray>to mute or unmute"
 
 scoreboard:
 
-  title: "<#FF6464><bold>Infinite Parkour"
+  title: "<#FF6464><bold>Eternal Parkour"
 
   lines:
     - "<blue>"
@@ -247,14 +249,44 @@ other:
   quit:
     material: "barrier"
     name: "<#D71F1F><bold>Quit"
-    lore: ""
+    lore: "<gray>Leave parkour and get||<gray>your things back.||||<#FFD166>» Click to leave"
 
   close:
-    material: "arrow"
+    material: "oak_door"
     name: "<#F5A3A3><bold>Close"
-    lore: ""
+    lore: "<gray>Close this menu."
 
   iep:
     material: "elytra"
     name: "<#4800FF><bold>Flying"
-    lore: "<gray>Parkour with elytra!"
+    lore: "<gray>Parkour with an elytra.||||<#FFD166>» Click to choose"
+  back:
+    material: "arrow"
+    name: "<#F5A3A3><bold>Back"
+    lore: "<gray>Return to the previous menu."
+  previous_page:
+    material: "spectral_arrow"
+    name: "<#FFD166><bold>« Previous page"
+    lore: "<gray>Page %page% of %pages%"
+  next_page:
+    material: "spectral_arrow"
+    name: "<#FFD166><bold>Next page »"
+    lore: "<gray>Page %page% of %pages%"
+  empty:
+    material: "cobweb"
+    name: "<gray>Nothing here yet"
+    lore: ""
+  hints:
+    open: "<#FFD166>» Click to open"
+    play: "<#FFD166>» Click to play"
+    view: "<#FFD166>» Click to view"
+    spectate: "<#FFD166>» Click to spectate"
+    select: "<#FFD166>» Click to select"
+    selected: "<#0DCB07>✔ Selected"
+    change: "<#FFD166>» Click to change"
+    toggle: "<#FFD166>» Click to toggle"
+    create: "<#FFD166>» Click to create a lobby"
+    join: "<#FFD166>» Click to join"
+    invite: "<#FFD166>» Click to invite"
+    choose: "<#FFD166>» Click to choose"
+    leave: "<#FFD166>» Click to leave"

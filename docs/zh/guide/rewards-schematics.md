@@ -2,7 +2,7 @@
 
 ## 方块跑酷奖励
 
-在 `plugins/IP/rewards-v2.yml` 中启用奖励：
+在 `plugins/EternalParkour/rewards-v2.yml` 中启用奖励：
 
 ```yaml
 enabled: true
@@ -35,7 +35,7 @@ one-time-rewards:
 
 ## 鞘翅奖励
 
-在 `plugins/IP/elytra/rewards.yml` 中启用奖励。每项由四个 `||` 分隔字段组成：
+在 `plugins/EternalParkour/elytra/rewards.yml` 中启用奖励。每项由四个 `||` 分隔字段组成：
 
 ```text
 <执行时间>||<模式>||<命令类型>||<值>
@@ -56,10 +56,10 @@ interval:
 
 ## 方块跑酷模板
 
-1. 执行 `/ip schematic wand`，或用 `/ip schematic pos1` 与 `/ip schematic pos2` 设置两个角。
-2. 执行 `/ip schematic save`。
+1. 执行 `/ep schematic wand`，或用 `/ep schematic pos1` 与 `/ep schematic pos2` 设置两个角。
+2. 执行 `/ep schematic save`。
 3. 记录聊天中显示的随机代码。
-4. 将代码和难度写入 `plugins/IP/schematics/schematics.yml`。
+4. 将代码和难度写入 `plugins/EternalParkour/schematics/schematics.yml`。
 5. 重载或重启后测试模板。
 
 ```yaml
@@ -74,8 +74,8 @@ difficulty:
 | 大于 0.5–0.75 | 困难 |
 | 大于 0.75–1.0 | 非常困难 |
 
-可用 `/ip schematic paste <文件>` 在当前位置预览已加载的模板。
+可用 `/ep schematic paste <文件>` 在当前位置预览已加载的模板。
 
 ## 鞘翅模板
 
-OP 可执行 `/iep schematic <x,y,z> <x,y,z>` 保存长方体区域。生成的 UUID 即 `plugins/IP/elytra/schematics/` 下的文件名。
+OP 可执行 `/iep schematic <x,y,z> <x,y,z>` 保存长方体区域。生成的 UUID 即 `plugins/EternalParkour/elytra/schematics/` 下的文件名。

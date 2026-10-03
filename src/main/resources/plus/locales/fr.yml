@@ -11,97 +11,98 @@ play:
     hourglass:
       material: "sand"
       name: "<#CFB410><bold>Sablier"
-      lore: "<dark_gray>Vous ne pouvez vous tenir sur des blocs que pendant 0.5 seconde"
+      lore: "<gray>Vous ne pouvez vous tenir sur des blocs que pendant 0.5 seconde"
 
     practice:
       item:
         material: "white_wool"
         name: "<white><bold>Entrainement"
-        lore: "<dark_gray>Entrainer vous avec des types de sauts spécifiques"
+        lore: "<gray>Entrainer vous avec des types de sauts spécifiques"
 
       items:
         settings:
           material: "comparator"
           name: "<#E74FA1><bold>Paramètres d'Entrainement"
-          lore: ""
+          lore: "<#FFD166>» Cliquez pour ouvrir"
 
         one_block:
           material: ""
           name: "<bold>Saut de 1 Blocks"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         two_block:
           material: ""
           name: "<bold>Saut de 2 Blocks"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         three_block:
           material: ""
           name: "<bold>Saut de 3 Blocks"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         four_block:
           material: ""
           name: "<bold>Saut de 4 Blocks"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         normal:
           material: ""
           name: "<bold>Normal"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         schematics:
           material: ""
           name: "<bold>Schematics"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         ice:
           material: ""
           name: "<bold>Glaçe"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         slabs:
           material: ""
           name: "<bold>Dalles"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         glass_panes:
           material: ""
           name: "<bold>Vitre"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
 
         fences:
           material: ""
           name: "<bold>Barrières"
-          lore: "<gray>Cliquez pour modifier ce paramètre."
+          lore: "<#FFD166>» Cliquez pour activer ou désactiver"
+      name: "Paramètres d'entraînement"
 
     wave_trial:
       material: "sand"
       name: "<#1882DE><bold>Wave Trial"
-      lore: "<dark_gray>Go up and down the stairs-simulator!"
+      lore: "<gray>Go up and down the stairs-simulator!"
 
     speed:
       material: "lingering_potion"
       name: "<#1882DE><bold>Vitesse"
-      lore: "<dark_gray>La Vitesse est la Clé!"
+      lore: "<gray>La Vitesse est la Clé!"
 
     super_jump:
       material: "rabbit_foot"
       name: "<#08508E><bold>Super Saut"
-      lore: "<dark_gray>Sauter de plate-forme en plate-forme||<dark_gray>pendant que vous devenez de plus en plus rapide||<red>Ce mode de jeu est très difficile!"
+      lore: "<gray>Sauter de plate-forme en plate-forme||<gray>pendant que vous devenez de plus en plus rapide||<red>Ce mode de jeu est très difficile!"
 
     time_trial:
       material: "clock"
       name: "<#9A0BC7><bold>Vague contre la montre"
-      lore: "<dark_gray>Montez et descendez d'escaliers-simulateur!"
+      lore: "<gray>Montez et descendez d'escaliers-simulateur!"
 
   multi:
-    name: "<white>Multijoueur"
+    name: "Multijoueur"
 
     item:
       material: "oak_boat"
       name: "<#0088CB><bold>Multijoueur"
-      lore: ""
+      lore: "<#FFD166>» Cliquez pour choisir un mode"
 
     duels:
       go: "<#1BE3DD><bold>Go!||<reset><gray>Premier à %d gagner!"
@@ -114,7 +115,7 @@ play:
       item:
         material: "red_concrete"
         name: "<#C91212><bold>Duels"
-        lore: "<dark_gray>Faites la course contre vos adversaires jusqu'à 100 points!||<dark_gray>Si quelqu'un tombe, il sera recommence à zéro au départ."
+        lore: "<gray>Faites la course contre vos adversaires jusqu'à 100 points!||<gray>Si quelqu'un tombe, il sera recommence à zéro au départ."
 
       start:
         material: "lime_banner"
@@ -124,15 +125,15 @@ play:
     team_survival:
       material: "poppy"
       name: "<#C91212><bold>Survie en équipe"
-      lore: "<dark_gray>Survivez le plus longtemps possible avec toute votre équipe||<dark_gray> Si quelqu'un tombe, tous le monde recommence!"
+      lore: "<gray>Survivez le plus longtemps possible avec toute votre équipe||<gray> Si quelqu'un tombe, tous le monde recommence!"
 
 active:
-  name: "<white>Lobbies"
+  name: "Lobbies"
 
   item:
     material: "chest"
     name: "<#EA9926><bold>Voir les lobbies actuels"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour ouvrir"
 
   head:
     material: ""
@@ -142,22 +143,29 @@ active:
   sort:
     material: "bookshelf"
     name: "<#DEA11F><bold>Trier"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour modifier"
 
   refresh:
     material: "blaze_powder"
     name: "<#2FBC11><bold>Rafraîchir"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour actualiser"
+  lobby:
+    name: "Salon de %s"
+    players: "<gray>Joueurs : %s"
+    mode: "<gray>Mode : %s"
+    playing: "<gray>En jeu :"
+    spectating: "<gray>Spectateurs :"
+    full: "» Complet, cliquez pour regarder"
 
 invite:
-  name: "<white>Cliquez pour Inviter"
+  name: "Inviter des joueurs"
   message: "<gray>Vous avez été invité par <#F55252>%s<reset><gray> pour rejoindre leur <#F37777><bold>%s<reset><gray> jeu! <reset><gray>Utilise <#FAB4B4>/parkour join %s<reset><gray> pour rejoindre!"
   success: "<gray>You've invited %s."
 
   item:
     material: "elytra"
     name: "<#2B97E2><bold>Invite"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour ouvrir"
 
   head:
     material: ""

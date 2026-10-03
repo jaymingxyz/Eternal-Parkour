@@ -2,12 +2,9 @@
 layout: home
 
 hero:
-  name: Infinite Parkour Reborn
+  name: Eternal Parkour
   text: One plugin. Three parkour experiences.
   tagline: Random block parkour, multiplayer modes, and infinite elytra courses for modern Paper servers.
-  image:
-    src: https://cdn.modrinth.com/data/cached_images/60d2d87882c3a8137076c6d33065b7c750320b64_0.webp
-    alt: Infinite Parkour Reborn
   actions:
     - theme: brand
       text: Get started
@@ -17,7 +14,7 @@ hero:
       link: /guide/commands
     - theme: alt
       text: GitHub
-      link: https://github.com/LostUmbrella58/IP-Reborn
+      link: https://github.com/jaymingxyz/EternalParkour
 
 features:
   - title: Infinite block parkour
@@ -27,16 +24,13 @@ features:
   - title: Infinite elytra parkour
     details: Seeded courses, configurable pipe styles, challenges, leaderboards, and rewards.
   - title: One installation
-    details: A single jar and one plugins/IP data tree, with safe migration from older folders.
+    details: A single jar and one plugins/EternalParkour data tree, with safe migration from older folders.
 ---
 
 ## Supported servers
 
 | Server | Java |
 | --- | --- |
-| Paper 1.21.11 | 21 or newer |
-| Paper 26.1.2 | 25 or newer |
-| Paper 26.2 | 25 or newer |
 | Paper 26.3 | 25 or newer |
 
 Spigot, Folia, older Minecraft releases, and unofficial Paper forks are not supported.

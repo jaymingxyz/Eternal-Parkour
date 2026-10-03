@@ -1,5 +1,5 @@
-import dev.efnilite.iep.generator.Generator
-import dev.efnilite.iep.world.Divider
+import io.github.jaymingxyz.eternalparkour.elytra.generator.Generator
+import io.github.jaymingxyz.eternalparkour.elytra.world.Divider
 import org.bukkit.util.Vector
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Test

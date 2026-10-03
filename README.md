@@ -1,16 +1,15 @@
-# Infinite Parkour Reborn
+# Eternal Parkour
 
-Infinite Parkour Reborn combines Infinite Parkour, IPPlus, and Infinite Elytra
-Parkour into one plugin and one data directory. The original projects were
-created by Efnilite.
+Eternal Parkour is infinite parkour for Paper: randomly generated block parkour,
+multiplayer modes (duels, team survival, time trial, and more), and infinite
+elytra courses in one plugin.
+
+It is a fork of [Infinite Parkour Reborn](https://github.com/LostUmbrella58/IP-Reborn),
+which merged Efnilite's Infinite Parkour, IPPlus, and Infinite Elytra Parkour.
+See [NOTICE.md](NOTICE.md) for attribution.
 
 ## Supported servers
 
-Infinite Parkour Reborn 6.0.1 supports the following server versions:
-
-- Paper 1.21.11 on Java 21
-- Paper 26.1.2 on Java 25
-- Paper 26.2 on Java 25
 - Paper 26.3 on Java 25
 
 Spigot, Folia, older Minecraft releases, and unofficial forks are not supported.
@@ -18,42 +17,43 @@ Spigot, Folia, older Minecraft releases, and unofficial forks are not supported.
 ## Installation
 
 1. Stop the server.
-2. Remove the old IP, IPPlus, and IEP jars.
-3. Put the single Infinite Parkour Reborn jar in `plugins/`.
+2. Remove any old IP, Infinite Parkour Reborn, IPPlus, or IEP jars.
+3. Put the Eternal Parkour jar in `plugins/`.
 4. Start the server.
 
-The plugin copies missing files from the old `plugins/IPPlus` and `plugins/IEP`
-folders into `plugins/IP/plus` and `plugins/IP/elytra`. The old folders are not
-deleted. See [MIGRATION.md](MIGRATION.md) before removing them manually.
+On first start, Eternal Parkour copies missing files from `plugins/IP`,
+`plugins/IPPlus`, and `plugins/IEP` into `plugins/EternalParkour`. The old
+folders are never modified or deleted. See [MIGRATION.md](MIGRATION.md).
 
-Commands from the former plugins remain available through `/ipp` and `/iep`.
-The main command is `/witp`, with `/parkour` and `/ip` as aliases.
+## Commands
+
+The main command is `/eternalparkour`, with `/ep`, `/parkour`, and `/witp` as
+aliases. The multiplayer and elytra commands are still `/ipp` and `/iep`.
+Permission nodes are unchanged (`ip.*` and `iep.*`).
+
+PlaceholderAPI placeholders are available as `%eternalparkour_...%`. The old
+`%witp_...%` and `%iep_...%` placeholders keep working.
+
+## Survival servers
+
+Parkour runs in its own void worlds, and everything a player has is backed up
+while they play and restored automatically after a crash. See
+`docs/guide/survival-servers.md` for recommended settings.
 
 ## Documentation
 
-Installation, migration, commands, permissions, configuration, placeholders,
-and developer API documentation are available at
-[lostumbrella58.github.io/IP-Reborn](https://lostumbrella58.github.io/IP-Reborn/).
+- Server owners: the documentation site in `docs/` (`npm ci && npm run docs:build`).
+- Developers: [DEVELOPMENT.md](DEVELOPMENT.md) covers the architecture, threading
+  rules, storage, build, tests and current status.
+- Changes since Infinite Parkour Reborn: [CHANGES.md](CHANGES.md).
 
 ## Building
-
-The default build targets Paper 1.21.11 and emits Java 21 bytecode, retaining
-compatibility with that server version while supporting Paper 26.3:
 
 ```powershell
 .\mvnw.cmd -B clean verify
 ```
 
-Other supported API baselines can be checked without editing the POM. Use JDK 25
-for these builds; the plugin still emits Java 21 bytecode:
-
-```powershell
-.\mvnw.cmd -B clean verify -Dpaper.version=26.1.2.build.74-stable
-.\mvnw.cmd -B clean verify -Dpaper.version=26.2.build.84-stable
-.\mvnw.cmd -B clean verify -Dpaper.version=26.3.build.142-beta
-```
-
-The shaded plugin jar is written to `target/IP-6.0.1.jar`.
+Requires JDK 25. The shaded plugin jar is written to `target/EternalParkour-<version>.jar`.
 
 This project is licensed under GPL-3.0. See [NOTICE.md](NOTICE.md) for upstream
 attribution.

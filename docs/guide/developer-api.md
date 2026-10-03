@@ -1,6 +1,6 @@
 # Developer API
 
-The Java API exposes player/session lookup, registries, and Bukkit events. Add Infinite Parkour Reborn as a compile-only/provided dependency and declare it as a dependency or soft dependency in your plugin metadata.
+The Java API exposes player/session lookup, registries, and Bukkit events. Add Eternal Parkour as a compile-only/provided dependency and declare it as a dependency or soft dependency in your plugin metadata.
 
 ## JitPack dependency
 
@@ -15,8 +15,8 @@ Replace `VERSION` with a Git tag or commit available from the repository.
 </repository>
 
 <dependency>
-  <groupId>com.github.LostUmbrella58</groupId>
-  <artifactId>IP-Reborn</artifactId>
+  <groupId>com.github.jaymingxyz</groupId>
+  <artifactId>EternalParkour</artifactId>
   <version>VERSION</version>
   <scope>provided</scope>
 </dependency>
@@ -28,7 +28,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.LostUmbrella58:IP-Reborn:VERSION")
+    compileOnly("com.github.jaymingxyz:EternalParkour:VERSION")
 }
 ```
 
@@ -49,7 +49,7 @@ Always handle a `null` result; players can leave between ticks.
 
 ## Bukkit events
 
-Available events in `dev.efnilite.ip.api.event`:
+Available events in `io.github.jaymingxyz.eternalparkour.core.api.event`:
 
 - `ParkourJoinEvent`
 - `ParkourLeaveEvent`

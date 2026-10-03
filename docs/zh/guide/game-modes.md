@@ -8,7 +8,7 @@
 
 ## 多人与扩展模式
 
-执行 `/ipp create` 选择已启用的模式。模式开关位于 `plugins/IP/plus/config.yml`。
+执行 `/ipp create` 选择已启用的模式。模式开关位于 `plugins/EternalParkour/plus/config.yml`。
 
 | 配置键 | 模式 |
 | --- | --- |
@@ -26,6 +26,6 @@
 
 ## 鞘翅跑酷
 
-执行 `/iep play` 可选择 Default、Close、Min Speed、Obstacle、Speed Demon 和 Time Trial。除默认模式外，其余模式可在 `plugins/IP/elytra/config.yml` 的 `mode-settings` 中启用或关闭。
+执行 `/iep play` 可选择 Default、Close、Min Speed、Obstacle、Speed Demon 和 Time Trial。除默认模式外，其余模式可在 `plugins/EternalParkour/elytra/config.yml` 的 `mode-settings` 中启用或关闭。
 
 玩家可调整风格、管道半径、世界时间、种子、语言、坠落行为、信息显示和公制单位。

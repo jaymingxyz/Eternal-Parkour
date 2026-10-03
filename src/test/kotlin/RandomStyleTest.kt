@@ -1,4 +1,4 @@
-import dev.efnilite.iep.style.RandomStyle
+import io.github.jaymingxyz.eternalparkour.elytra.style.RandomStyle
 import org.bukkit.Material
 import org.junit.jupiter.api.Test
 import kotlin.random.Random

@@ -11,7 +11,7 @@
 # leave:test - executes a command on leave.
 # send:<bold>test - sends a message.
 # vault:-87 - deposits a specific amount of money (Vault required)
-# default:test - mode-specific rewards. Mode names are "default", or for IP+ modes the same as the name used in the IP+ config.
+# default:test - mode-specific rewards. Mode names are "default", or for multiplayer modes the same as the name used in plus/config.yml.
 #
 # Learn more about colouring: https://docs.advntr.dev/minimessage/format.html
 

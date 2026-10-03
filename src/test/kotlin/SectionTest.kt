@@ -1,4 +1,4 @@
-import dev.efnilite.iep.generator.section.Section
+import io.github.jaymingxyz.eternalparkour.elytra.generator.section.Section
 import org.bukkit.util.Vector
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

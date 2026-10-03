@@ -2,7 +2,7 @@
 
 ## Block-parkour rewards
 
-Enable rewards in `plugins/IP/rewards-v2.yml`:
+Enable rewards in `plugins/EternalParkour/rewards-v2.yml`:
 
 ```yaml
 enabled: true
@@ -35,7 +35,7 @@ Scores of zero are ignored. One-time rewards are recorded by score and are not i
 
 ## Elytra rewards
 
-Enable `plugins/IP/elytra/rewards.yml`. Every entry uses four `||`-separated fields:
+Enable `plugins/EternalParkour/elytra/rewards.yml`. Every entry uses four `||`-separated fields:
 
 ```text
 <time>||<mode>||<command>||<value>
@@ -58,10 +58,10 @@ interval:
 
 ## Block-parkour schematics
 
-1. Use `/ip schematic wand`, or set both corners with `/ip schematic pos1` and `/ip schematic pos2`.
-2. Run `/ip schematic save`.
+1. Use `/ep schematic wand`, or set both corners with `/ep schematic pos1` and `/ep schematic pos2`.
+2. Run `/ep schematic save`.
 3. Note the generated code shown in chat.
-4. Add that code and a difficulty to `plugins/IP/schematics/schematics.yml`.
+4. Add that code and a difficulty to `plugins/EternalParkour/schematics/schematics.yml`.
 5. Reload or restart, then test the schematic.
 
 ```yaml
@@ -78,8 +78,8 @@ Difficulty ranges are:
 | above 0.5–0.75 | Hard |
 | above 0.75–1.0 | Very hard |
 
-Use `/ip schematic paste <file>` to preview a loaded schematic at your position.
+Use `/ep schematic paste <file>` to preview a loaded schematic at your position.
 
 ## Elytra schematics
 
-Operators can save a cuboid with `/iep schematic <x,y,z> <x,y,z>`. The generated UUID is used as the filename under `plugins/IP/elytra/schematics/`.
+Operators can save a cuboid with `/iep schematic <x,y,z> <x,y,z>`. The generated UUID is used as the filename under `plugins/EternalParkour/elytra/schematics/`.

@@ -3,29 +3,29 @@
 
 go back:
   material: "arrow"
-  name: "<white><bold>Go back"
-  lore: ""
+  name: "<#F5A3A3><bold>Back"
+  lore: "<gray>Return to the previous menu."
 
 hotbar:
   play:
     material: "sugar_cane"
     name: "<#2fb900><bold>Play"
-    lore: ""
+    lore: "<#FFD166>» Click to open"
 
   settings:
     material: "comparator"
     name: "<#c10000><bold>Settings"
-    lore: ""
+    lore: "<#FFD166>» Click to open"
 
   leaderboards:
     material: "spruce_hanging_sign"
     name: "<white><bold>Leaderboards"
-    lore: ""
+    lore: "<#FFD166>» Click to open"
 
   leave:
     material: "barrier"
     name: "<#b32400><bold>Leave"
-    lore: ""
+    lore: "<#FFD166>» Click to leave"
 
 play:
   title: "Play"
@@ -34,7 +34,7 @@ modes:
   default:
     material: "barrel"
     name: "<white><bold>Default"
-    lore: ""
+    lore: "<gray>The classic endless course."
 
     title: "Default"
 
@@ -121,12 +121,12 @@ settings:
   title: "Settings"
 
   enabled:
-    material: "green_stained_glass_pane"
+    material: "lime_dye"
     name: "<#00ff00>"
     lore: "<#0DCB07><bold>✔"
 
   disabled:
-    material: "red_stained_glass_pane"
+    material: "gray_dye"
     name: "<red>"
     lore: "<red><bold>✘"
 
@@ -205,7 +205,7 @@ reset:
     - "<gray>%reason%"
 
 scoreboard:
-  title: "<gradient:#4800FF:#B200FF><bold>IEP</gradient>"
+  title: "<gradient:#4800FF:#B200FF><bold>Eternal Parkour</gradient>"
 
   lines:
     - ""
@@ -215,3 +215,30 @@ scoreboard:
     - "<#7700FF><bold>Seed</bold> <gray>%seed%"
     - ""
     - "<#505050>server.ip"
+
+close:
+  material: "oak_door"
+  name: "<#F5A3A3><bold>Close"
+  lore: "<gray>Close this menu."
+
+previous page:
+  material: "spectral_arrow"
+  name: "<#FFD166><bold>« Previous page"
+  lore: "<gray>Page %page% of %pages%"
+
+next page:
+  material: "spectral_arrow"
+  name: "<#FFD166><bold>Next page »"
+  lore: "<gray>Page %page% of %pages%"
+
+empty:
+  material: "cobweb"
+  name: "<gray>Nothing here yet"
+  lore: ""
+
+hints:
+  play: "<#FFD166>» Click to play"
+  select: "<#FFD166>» Click to select"
+  selected: "<#0DCB07>✔ Selected"
+  change: "<#FFD166>» Click to change"
+  view: "<#FFD166>» Click to view"

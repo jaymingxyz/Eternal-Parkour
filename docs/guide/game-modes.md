@@ -8,7 +8,7 @@ The main play menu also provides spectator access to active sessions.
 
 ## Multiplayer and alternative modes
 
-Open `/ipp create` to choose an enabled mode. Modes are controlled in `plugins/IP/plus/config.yml`.
+Open `/ipp create` to choose an enabled mode. Modes are controlled in `plugins/EternalParkour/plus/config.yml`.
 
 | Configuration key | Mode |
 | --- | --- |
@@ -35,4 +35,4 @@ Open `/iep play` to select an elytra mode:
 - Speed Demon
 - Time Trial
 
-The optional modes can be enabled or disabled under `mode-settings` in `plugins/IP/elytra/config.yml`. Player settings include style, pipe radius, world time, seed, locale, fall behavior, information display, and metric units.
+The optional modes can be enabled or disabled under `mode-settings` in `plugins/EternalParkour/elytra/config.yml`. Player settings include style, pipe radius, world time, seed, locale, fall behavior, information display, and metric units.

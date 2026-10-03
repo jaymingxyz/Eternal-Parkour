@@ -1,4 +1,4 @@
-# Built-in IP hologram leaderboards.
+# Built-in Eternal Parkour hologram leaderboards.
 #
 # Replaces the DecentHolograms / HolographicDisplays softdepends. Uses Paper's modern
 # Display API (TextDisplay + ItemDisplay + Interaction), so:
@@ -8,7 +8,7 @@
 #   - entities are setPersistent(false) — they vanish on crash and never leak
 #
 # Lines use MiniMessage tags (https://docs.advntr.dev/minimessage/). PlaceholderAPI
-# placeholders like %witp_player_rank_default_1% still resolve as before.
+# placeholders like %eternalparkour_player_rank_default_1% resolve (the old %witp_...% ones too).
 #
 # Positioning convention: the `location` Y is the TOP of the visible text — the lines
 # grow DOWNWARD from there (DecentHolograms compatible). Icon `offset` is relative to
@@ -18,13 +18,16 @@
 #   - offset X / Z : sideways from the text center
 #
 # So `offset: '0.0, 0.6, 0.0'` floats the icon ~half a block above the title text.
+#
+# The holograms below are examples and start disabled. Set 'location' to 'world:x:y:z:yaw'
+# (for example 'world:0.5:80:0.5:0'), set 'enabled: true' and restart the server.
 
 holograms:
 
   # ---------- Classic mode leaderboard (top 10, multi-page) ----------
   classic-leaderboard:
-    enabled: true
-    location: 'pkhub:-4.076:87:3.628:0'
+    enabled: false
+    location: 'world:-4.076:87:3.628:0'
     update-interval-ticks: 40
     interaction:
       width: 1.6
@@ -32,40 +35,42 @@ holograms:
       offset-y: -1.4              # click box covers the whole text column
     pages:
       - lines:
-          - '<gradient:#1fe7ff:#57fde7>༺ 经典模式排行榜 ༻</gradient>'
-          - '<color:#36a1ff>☻ <color:#41ff6c>玩家  <color:#58fe83>-  <color:#74d9ff>⌚ <color:#6ffe9a>用时  <color:#86feb1>-  <color:#0dffd1>♞  <color:#9dfdc8>得分'
-          - '<color:#36a1ff>☻ <color:#41ff6c>1. <color:#4dff77>%witp_player_rank_default_1% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_1% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_1%'
-          - '<color:#36a1ff>☻ <color:#41ff6c>2. <color:#4dff77>%witp_player_rank_default_2% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_2% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_2%'
-          - '<color:#36a1ff>☻ <color:#41ff6c>3. <color:#4dff77>%witp_player_rank_default_3% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_3% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_3%'
-          - '<color:#36a1ff>☻ <color:#41ff6c>4. <color:#4dff77>%witp_player_rank_default_4% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_4% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_4%'
-          - '<color:#36a1ff>☻ <color:#41ff6c>5. <color:#4dff77>%witp_player_rank_default_5% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_5% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_5%'
+          - '<gradient:#FF6464:#FFB36B><bold>Eternal Parkour</bold></gradient>'
+          - '<gray>Default mode · Top 5'
+          - '<color:#36a1ff>☻ <color:#41ff6c>Player  <color:#58fe83>-  <color:#74d9ff>⌚ <color:#6ffe9a>Time  <color:#86feb1>-  <color:#0dffd1>♞  <color:#9dfdc8>Score'
+          - '<color:#36a1ff>☻ <color:#41ff6c>1. <color:#4dff77>%eternalparkour_player_rank_default_1% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_1% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_1%'
+          - '<color:#36a1ff>☻ <color:#41ff6c>2. <color:#4dff77>%eternalparkour_player_rank_default_2% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_2% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_2%'
+          - '<color:#36a1ff>☻ <color:#41ff6c>3. <color:#4dff77>%eternalparkour_player_rank_default_3% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_3% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_3%'
+          - '<color:#36a1ff>☻ <color:#41ff6c>4. <color:#4dff77>%eternalparkour_player_rank_default_4% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_4% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_4%'
+          - '<color:#36a1ff>☻ <color:#41ff6c>5. <color:#4dff77>%eternalparkour_player_rank_default_5% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_5% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_5%'
           - ''
-          - '<aqua><bold>「 右键翻页 / 潜行右键回退 」</bold></aqua>'
+          - '<aqua><bold>Right-click: next page · Sneak + right-click: back</bold></aqua>'
         icons:
           - material: GOLDEN_BOOTS
             enchanted: true
             offset: '0.0,0.6,0.0'
             scale: 0.6
       - lines:
-          - '<gradient:#1fe7ff:#57fde7>༺ 经典模式 6–10 ༻</gradient>'
-          - '<color:#36a1ff>☻ <color:#41ff6c>玩家  <color:#58fe83>-  <color:#74d9ff>⌚ <color:#6ffe9a>用时  <color:#86feb1>-  <color:#0dffd1>♞  <color:#9dfdc8>得分'
-          - '<color:#36a1ff>☻ <color:#41ff6c>6. <color:#4dff77>%witp_player_rank_default_6% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_6% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_6%'
-          - '<color:#36a1ff>☻ <color:#41ff6c>7. <color:#4dff77>%witp_player_rank_default_7% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_7% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_7%'
-          - '<color:#36a1ff>☻ <color:#41ff6c>8. <color:#4dff77>%witp_player_rank_default_8% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_8% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_8%'
-          - '<color:#36a1ff>☻ <color:#41ff6c>9. <color:#4dff77>%witp_player_rank_default_9% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_9% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_9%'
-          - '<color:#36a1ff>☻ <color:#41ff6c>10. <color:#4dff77>%witp_player_rank_default_10% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%witp_time_rank_default_10% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%witp_score_rank_default_10%'
+          - '<gradient:#FF6464:#FFB36B><bold>Eternal Parkour</bold></gradient>'
+          - '<gray>Default mode · 6 to 10'
+          - '<color:#36a1ff>☻ <color:#41ff6c>Player  <color:#58fe83>-  <color:#74d9ff>⌚ <color:#6ffe9a>Time  <color:#86feb1>-  <color:#0dffd1>♞  <color:#9dfdc8>Score'
+          - '<color:#36a1ff>☻ <color:#41ff6c>6. <color:#4dff77>%eternalparkour_player_rank_default_6% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_6% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_6%'
+          - '<color:#36a1ff>☻ <color:#41ff6c>7. <color:#4dff77>%eternalparkour_player_rank_default_7% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_7% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_7%'
+          - '<color:#36a1ff>☻ <color:#41ff6c>8. <color:#4dff77>%eternalparkour_player_rank_default_8% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_8% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_8%'
+          - '<color:#36a1ff>☻ <color:#41ff6c>9. <color:#4dff77>%eternalparkour_player_rank_default_9% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_9% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_9%'
+          - '<color:#36a1ff>☻ <color:#41ff6c>10. <color:#4dff77>%eternalparkour_player_rank_default_10% <color:#58fe83>- <color:#74d9ff>⌚ <color:#6ffe9a>%eternalparkour_time_rank_default_10% <color:#86feb1>- <color:#0dffd1>♞ <color:#9dfdc8>%eternalparkour_score_rank_default_10%'
           - ''
-          - '<aqua><bold>「 右键翻页 / 潜行右键回退 」</bold></aqua>'
+          - '<aqua><bold>Right-click: next page · Sneak + right-click: back</bold></aqua>'
         icons:
           - material: GOLDEN_BOOTS
             enchanted: true
             offset: '0.0,0.6,0.0'
             scale: 0.6
 
-  # ---------- IPP hourglass mode top 5 (single page) ----------
+  # ---------- Hourglass mode top 5 (single page) ----------
   hourglass-leaderboard:
-    enabled: true
-    location: 'pkhub:-14.101:87:3.628:0'
+    enabled: false
+    location: 'world:-14.101:87:3.628:0'
     update-interval-ticks: 40
     interaction:
       width: 1.6
@@ -73,13 +78,14 @@ holograms:
       offset-y: -1.0
     pages:
       - lines:
-          - '<gradient:#ff7e5f:#feb47b>༺ 时间陷阱排行榜 ༻</gradient>'
-          - '<color:#ff8080>☻ 玩家  <color:#ffba80>-  ⌚ 用时  <color:#ffeb80>-  ♞ 得分'
-          - '<color:#ff8080>1. <color:#ffba80>%witp_player_rank_hourglass_1% - %witp_time_rank_hourglass_1% - %witp_score_rank_hourglass_1%'
-          - '<color:#ff8080>2. <color:#ffba80>%witp_player_rank_hourglass_2% - %witp_time_rank_hourglass_2% - %witp_score_rank_hourglass_2%'
-          - '<color:#ff8080>3. <color:#ffba80>%witp_player_rank_hourglass_3% - %witp_time_rank_hourglass_3% - %witp_score_rank_hourglass_3%'
-          - '<color:#ff8080>4. <color:#ffba80>%witp_player_rank_hourglass_4% - %witp_time_rank_hourglass_4% - %witp_score_rank_hourglass_4%'
-          - '<color:#ff8080>5. <color:#ffba80>%witp_player_rank_hourglass_5% - %witp_time_rank_hourglass_5% - %witp_score_rank_hourglass_5%'
+          - '<gradient:#FF6464:#FFB36B><bold>Eternal Parkour</bold></gradient>'
+          - '<gray>Hourglass · Top 5'
+          - '<color:#ff8080>☻ Player  <color:#ffba80>-  ⌚ Time  <color:#ffeb80>-  ♞ Score'
+          - '<color:#ff8080>1. <color:#ffba80>%eternalparkour_player_rank_hourglass_1% - %eternalparkour_time_rank_hourglass_1% - %eternalparkour_score_rank_hourglass_1%'
+          - '<color:#ff8080>2. <color:#ffba80>%eternalparkour_player_rank_hourglass_2% - %eternalparkour_time_rank_hourglass_2% - %eternalparkour_score_rank_hourglass_2%'
+          - '<color:#ff8080>3. <color:#ffba80>%eternalparkour_player_rank_hourglass_3% - %eternalparkour_time_rank_hourglass_3% - %eternalparkour_score_rank_hourglass_3%'
+          - '<color:#ff8080>4. <color:#ffba80>%eternalparkour_player_rank_hourglass_4% - %eternalparkour_time_rank_hourglass_4% - %eternalparkour_score_rank_hourglass_4%'
+          - '<color:#ff8080>5. <color:#ffba80>%eternalparkour_player_rank_hourglass_5% - %eternalparkour_time_rank_hourglass_5% - %eternalparkour_score_rank_hourglass_5%'
         icons:
           - material: ELYTRA
             enchanted: true

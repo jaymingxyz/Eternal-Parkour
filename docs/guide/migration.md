@@ -1,30 +1,37 @@
 # Migration
 
-Version 6 uses one plugin jar. Do not run old IPPlus or IEP jars beside it.
-
-To upgrade from Infinite Parkour Reborn 6.0.0 to 6.0.1, stop the server, replace the plugin jar, and keep `plugins/IP/`. Use Java 25 or newer when running Paper 26.3. The data locations and legacy migration procedure remain the same.
+Eternal Parkour replaces Infinite Parkour (IP), Infinite Parkour Reborn, IPPlus, and Infinite Elytra Parkour (IEP). Do not run any of those jars beside it.
 
 ## Before upgrading
 
 1. Stop the server.
-2. Back up `plugins/IP/`, `plugins/IPPlus/`, and `plugins/IEP/`.
+2. Back up `plugins/IP/`, `plugins/IPPlus/`, and `plugins/IEP/` (whichever exist).
 3. Remove the old plugin jars from `plugins/`.
-4. Add the Infinite Parkour Reborn jar and start the server.
+4. Add the Eternal Parkour jar and start the server.
 
-## Automatic folder migration
+## Automatic data import
 
 At startup, files that do not already exist are copied as follows:
 
-| Previous location | Current location |
+| Previous location | New location |
 | --- | --- |
-| `plugins/IPPlus/` | `plugins/IP/plus/` |
-| `plugins/IEP/` | `plugins/IP/elytra/` |
+| `plugins/IP/` | `plugins/EternalParkour/` |
+| `plugins/IPPlus/` | `plugins/EternalParkour/plus/` |
+| `plugins/IEP/` | `plugins/EternalParkour/elytra/` |
 
-The copy does not delete the previous directories and does not overwrite files already present in the destination. This makes an interrupted migration safe to run again.
+The import never modifies or deletes the previous folders and never overwrites files already present in `plugins/EternalParkour/`. Each previous folder is imported once; imported folders are listed in `plugins/EternalParkour/.legacy-imports`. Remove a line from that file to import that folder again.
+
+## What stays the same
+
+- Permission nodes (`ip.*`, `iep.*`) and their defaults.
+- `/parkour`, `/witp`, `/ipp`, and `/iep` still work. `/ip` has been replaced by `/ep`.
+- `%witp_...%` and `%iep_...%` placeholders still work. New setups should use `%eternalparkour_...%`.
+- The parkour world name (`witp` by default) and the MySQL table names.
+- Inventory backups written by Infinite Parkour can still be restored with `/ep recoverinventory`.
 
 ## Verification checklist
 
-- Open `/parkour`, `/ipp`, and `/iep`.
+- Open `/ep`, `/ipp`, and `/iep`.
 - Confirm player scores and leaderboards.
 - Test custom styles and schematics.
 - Check SQL connection settings if MySQL is enabled.

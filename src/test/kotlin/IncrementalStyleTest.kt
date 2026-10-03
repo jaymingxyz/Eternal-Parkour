@@ -1,4 +1,4 @@
-import dev.efnilite.iep.style.IncrementalStyle
+import io.github.jaymingxyz.eternalparkour.elytra.style.IncrementalStyle
 import org.bukkit.Material
 import org.junit.jupiter.api.Test
 

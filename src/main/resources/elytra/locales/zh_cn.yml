@@ -6,29 +6,29 @@
 
 go back:
   material: "arrow"
-  name: "<white><bold>返回"
-  lore: ""
+  name: "<#F5A3A3><bold>返回"
+  lore: "<gray>返回上一个菜单"
 
 hotbar:
   play:
     material: "sugar_cane"
     name: "<#2fb900><bold>开始游戏"
-    lore: ""
+    lore: "<#FFD166>» 点击打开"
 
   settings:
     material: "comparator"
     name: "<#c10000><bold>个人设置"
-    lore: ""
+    lore: "<#FFD166>» 点击打开"
 
   leaderboards:
     material: "spruce_hanging_sign"
     name: "<white><bold>排行榜"
-    lore: ""
+    lore: "<#FFD166>» 点击打开"
 
   leave:
     material: "barrier"
     name: "<#b32400><bold>离开游戏"
-    lore: ""
+    lore: "<#FFD166>» 点击退出"
 
 play:
   title: "游戏"
@@ -37,7 +37,7 @@ modes:
   default:
     material: "barrel"
     name: "<white><bold>经典"
-    lore: ""
+    lore: "<gray>经典的无尽赛道。"
 
     title: "经典"
 
@@ -124,12 +124,12 @@ settings:
   title: "个人设置"
 
   enabled:
-    material: "green_stained_glass_pane"
+    material: "lime_dye"
     name: "<#00ff00>"
     lore: "<#0DCB07><bold>✔"
 
   disabled:
-    material: "red_stained_glass_pane"
+    material: "gray_dye"
     name: "<red>"
     lore: "<red><bold>✘"
 
@@ -208,7 +208,7 @@ reset:
     - "<gray>%reason%"
 
 scoreboard:
-  title: "<gradient:#4800FF:#B200FF><bold>无尽飞行</gradient>"
+  title: "<gradient:#4800FF:#B200FF><bold>Eternal Parkour</gradient>"
 
   lines:
     - ""
@@ -218,3 +218,30 @@ scoreboard:
     - "<#7700FF><bold>当前种子</bold> <gray>%seed%"
     - ""
     - "<#505050>server.ip"
+
+close:
+  material: "oak_door"
+  name: "<#F5A3A3><bold>关闭"
+  lore: "<gray>关闭此菜单"
+
+previous page:
+  material: "spectral_arrow"
+  name: "<#FFD166><bold>« 上一页"
+  lore: "<gray>第 %page% / %pages% 页"
+
+next page:
+  material: "spectral_arrow"
+  name: "<#FFD166><bold>下一页 »"
+  lore: "<gray>第 %page% / %pages% 页"
+
+empty:
+  material: "cobweb"
+  name: "<gray>这里还什么都没有"
+  lore: ""
+
+hints:
+  play: "<#FFD166>» 点击开始"
+  select: "<#FFD166>» 点击选择"
+  selected: "<#0DCB07>✔ 已选择"
+  change: "<#FFD166>» 点击更改"
+  view: "<#FFD166>» 点击查看"

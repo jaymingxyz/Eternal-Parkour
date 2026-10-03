@@ -7,31 +7,31 @@
 name: "日本語"
 
 main:
-  name: "<white>パルクール"
+  name: "Eternal Parkour"
 
 play:
-  name: "<white>プレイ"
+  name: "プレイ"
 
   item:
     material: "sugar_cane"
     name: "<#60EB76><bold>プレイ"
-    lore: ""
+    lore: "<#FFD166>» クリックで開く"
 
   single:
-    name: "<white>シングルプレ"
+    name: "シングルプレ"
 
     item:
       material: "ender_pearl"
       name: "<#6E92B1><bold>シングルプレイ"
-      lore: ""
+      lore: "<#FFD166>» クリックで選択"
 
     default:
       material: "barrel"
       name: "<#6693E7><bold>デフォルト"
-      lore: "<dark_gray>デフォルトのモード。"
+      lore: "<gray>デフォルトのモード。"
 
   spectator:
-    name: "<white>見物"
+    name: "見物"
 
     join: "<#4CB3FF>今、見物です。 モードを変えるかやめるか\"/parkour\"を使います。"
     action_bar: "<#4CB3FF>今、見物人です。 <gray>• <#4CB3FF>\"/parkour\"を使う to leave."
@@ -42,7 +42,7 @@ play:
     item:
       material: "glass"
       name: "<#39D5AB><bold>見物"
-      lore: ""
+      lore: "<#FFD166>» クリックで選択"
 
     head:
       material: ""
@@ -50,20 +50,20 @@ play:
       lore: ""
 
 community:
-  name: "<white>コミュニティ"
+  name: "コミュニティ"
 
   item:
     material: "oak_boat"
     name: "<#60C9DF><bold>コミュニティ"
-    lore: ""
+    lore: "<#FFD166>» クリックで開く"
 
   leaderboards:
-    name: "<white>リーダーボード"
+    name: "リーダーボード"
 
     item:
       material: "gold_nugget"
       name: "<#6693E7><bold>リーダーボード"
-      lore: ""
+      lore: "<#FFD166>» クリックで開く"
 
     sort:
       material: "bookshelf"
@@ -74,28 +74,29 @@ community:
     head:
       material: ""
       name: "<#6693E7><bold>#%r - %p"
-      lore: "<#5574AF>得点: <gray>%s||<#5574AF>時間: <gray>%t||<#5574AF>難しさ: <gray>%d<dark_gray>/1.0"
+      lore: "<#5574AF>得点: <gray>%s||<#5574AF>時間: <gray>%t||<#5574AF>難しさ: <gray>%d<gray>/1.0"
+    title: "ランキング · %s"
 
 settings:
-  name: "<white>設定"
+  name: "設定"
 
   item:
     material: "comparator"
     name: "<#6086EB><bold>設定"
-    lore: ""
+    lore: "<#FFD166>» クリックで開く"
 
   lang:
-    name: "<white>言葉"
+    name: "言葉"
 
     item:
       material: "writable_book"
       name: "<#6693E7><bold>言葉"
-      lore: "<dark_gray>今: <#5574AF><bold>%s"
+      lore: "<gray>今: <#5574AF><bold>%s||||<#FFD166>» クリックで変更"
 
   chat:
     material: "crossbow"
     name: "<#20C6BC><bold>チャット"
-    lore: "<dark_gray>今: <#17B2CE><bold>%s||<dark_gray>Select who you can chat with"
+    lore: "<gray>今: <#17B2CE><bold>%s||<gray>Select who you can chat with||||<#FFD166>» クリックで変更"
     values: ["ロビーのみ", "プレイヤーのみ", "公共"]
 
     formats:
@@ -110,7 +111,7 @@ settings:
     item:
       material: "redstone"
       name: "<#A10404><bold>パルクールの設定"
-      lore: "<dark_gray>Change the way your parkour appears."
+      lore: "<gray>Change the way your parkour appears.||||<#FFD166>» クリックで開く"
 
     items:
 
@@ -120,7 +121,7 @@ settings:
         lore: "<gray>You have a score above 0,||<gray>which means you cant change this setting."
 
       styles:
-        name: "<white>スタイル"
+        name: "スタイル"
 
         style_item:
           material: ""
@@ -130,34 +131,34 @@ settings:
         item:
           material: "crafting_table"
           name: "<#6693E7><bold>スタイル"
-          lore: "<#5574AF>今: <gray>%s||<gray>ブロックのスタイル。"
+          lore: "<#5574AF>今: <gray>%s||<gray>ブロックのスタイル。||||<#FFD166>» クリックで選択"
 
       leads:
         material: "feather"
         name: "<#6693E7><bold>先のブロックの数"
-        lore: "<#5574AF>今: <gray>%sブロック||<gray>先のブロックの数。"
+        lore: "<#5574AF>今: <gray>%sブロック||<gray>先のブロックの数。||||<#FFD166>» クリックで変更"
 
       time:
         material: "clock"
         name: "<#6693E7><bold>時間"
-        lore: "<#5574AF>今: <gray>%s||<gray>今の時間。"
+        lore: "<#5574AF>今: <gray>%s||<gray>今の時間。||||<#FFD166>» クリックで変更"
 
       schematics:
         material: ""
         name: "<#6693E7><bold>スキマティクの難しさ"
-        lore: "<#5574AF>今: <gray>%s||<gray>スキマティクの難しさ。"
+        lore: "<#5574AF>今: <gray>%s||<gray>スキマティクの難しさ。||||<#FFD166>» クリックで変更"
         values: ["<red>オフ", "<#0DCB07>初級", "<yellow>中級", "<#FF6C17>高級", "<dark_red>上級"]
 
       scoreboard:
         material: ""
         name: "スコアボードを見せる"
-        lore: "<gray>今: %s||<gray>オン時、スコアボードを見せる。"
+        lore: "<gray>今: %s||<gray>オン時、スコアボードを見せる。||||<#FFD166>» クリックで切り替え"
 
       fall_message:
         item:
           material: ""
           name: "転ぶのメッセージを見せる"
-          lore: "<gray>今: %s||<gray>If enabled shows a message when you fall||<gray>with extra info."
+          lore: "<gray>今: %s||<gray>If enabled shows a message when you fall||<gray>with extra info.||||<#FFD166>» クリックで切り替え"
 
         divider: "<dark_gray><strikethrough>-----------------------------------"
         score: "<#80C7FD><bold>得点 <reset><white>%s"
@@ -172,25 +173,26 @@ settings:
       particles:
         material: ""
         name: "パチケるを見せる"
-        lore: "<gray>今: %s||<gray>オン時、every generated block||<gray>will show particles."
+        lore: "<gray>今: %s||<gray>オン時、every generated block||<gray>will show particles.||||<#FFD166>» クリックで切り替え"
 
       sound:
         material: ""
         name: "音をプレイします"
-        lore: "<gray>今: %s||<gray>オン時、every generated block||<gray>will play a sound."
+        lore: "<gray>今: %s||<gray>オン時、every generated block||<gray>will play a sound.||||<#FFD166>» クリックで切り替え"
 
       special_blocks:
         material: ""
         name: "特別のブロックの使用"
-        lore: "<gray>今: %s||<gray>オン時、uses special blocks like ice and slabs."
+        lore: "<gray>今: %s||<gray>オン時、uses special blocks like ice and slabs.||||<#FFD166>» クリックで切り替え"
 
       score_difficulty:
         material: ""
         name: "得点の難しさ"
-        lore: "<gray>今: %s||<gray>オン時、 the higher score you have,||<gray>the more difficult it gets."
+        lore: "<gray>今: %s||<gray>オン時、 the higher score you have,||<gray>the more difficult it gets.||||<#FFD166>» クリックで切り替え"
+    name: "パルクール設定"
 
 lobby:
-  name: "<white>ロビー"
+  name: "ロビー"
 
   other_join: '<dark_green><bold>+ <reset><gray>%sはロビーに入った'
   other_leave: '<red><bold>- <reset><gray>%sはロビーに出た'
@@ -198,16 +200,16 @@ lobby:
   item:
     material: "iron_ingot"
     name: "<#EB608C><bold>ロビー"
-    lore: ""
+    lore: "<#FFD166>» クリックで開く"
 
   visibility:
     material: "firework_rocket"
     name: "<#A1E1DD><bold>見える"
-    lore: "<dark_gray>今: <#2BD4E2><bold>%s||<dark_gray>Select who can join your lobby."
+    lore: "<gray>今: <#2BD4E2><bold>%s||<gray>Select who can join your lobby.||||<#FFD166>» クリックで変更"
     values: ["私立", "招きだけ", "公共"]
 
   player_management:
-    name: "<white>プレイヤーのマネジメント"
+    name: "プレイヤーのマネジメント"
 
     kicked: "<gray>You've been kicked from your lobby by the lobby owner."
     advice: "<gray>Set your lobby visibility to invite-only or private to avoid people randomly joining."
@@ -217,18 +219,18 @@ lobby:
     item:
       material: "cake"
       name: "<#8DC9E5><bold>プレイヤーのマネジメント"
-      lore: "<dark_gray>プレイヤーをキックするやミュートする。"
+      lore: "<gray>プレイヤーをキックするやミュートする。||||<#FFD166>» クリックで開く"
 
     head:
       material: ""
       name: "<#4BD16D><bold>%s"
       lore: ""
-      top: "<dark_gray>ロビーにミュートかった||"
-      bottom: "<#8DE5A3>左クリック<dark_gray>でロビーからキックする。||<#8DE5A3>右クリック<dark_gray> to (un)mute in lobby"
+      top: "<gray>ロビーにミュートかった||"
+      bottom: "<#8DE5A3>左クリック<gray>でロビーからキックする。||<#8DE5A3>右クリック<gray> to (un)mute in lobby"
 
 scoreboard:
 
-  title: "<#FF6464><bold>無限なパルクール"
+  title: "<#FF6464><bold>Eternal Parkour"
 
   lines:
     - "<blue>"
@@ -247,14 +249,44 @@ other:
   quit:
     material: "barrier"
     name: "<#D71F1F><bold>終了"
-    lore: ""
+    lore: "<#FFD166>» クリックで退出"
 
   close:
-    material: "arrow"
+    material: "oak_door"
     name: "<#F5A3A3><bold>戻る"
-    lore: ""
+    lore: "<gray>このメニューを閉じます。"
 
   iep:
     material: "elytra"
     name: "<#4800FF><bold>Flying"
-    lore: "<gray>Parkour with elytra!"
+    lore: "<gray>Parkour with elytra!||||<#FFD166>» クリックで選択"
+  back:
+    material: "arrow"
+    name: "<#F5A3A3><bold>戻る"
+    lore: "<gray>前のメニューに戻ります。"
+  previous_page:
+    material: "spectral_arrow"
+    name: "<#FFD166><bold>« 前のページ"
+    lore: "<gray>%page% / %pages% ページ"
+  next_page:
+    material: "spectral_arrow"
+    name: "<#FFD166><bold>次のページ »"
+    lore: "<gray>%page% / %pages% ページ"
+  empty:
+    material: "cobweb"
+    name: "<gray>まだ何もありません"
+    lore: ""
+  hints:
+    open: "<#FFD166>» クリックで開く"
+    play: "<#FFD166>» クリックでプレイ"
+    view: "<#FFD166>» クリックで表示"
+    spectate: "<#FFD166>» クリックで観戦"
+    select: "<#FFD166>» クリックで選択"
+    selected: "<#0DCB07>✔ 選択中"
+    change: "<#FFD166>» クリックで変更"
+    toggle: "<#FFD166>» クリックで切り替え"
+    create: "<#FFD166>» クリックでロビーを作成"
+    join: "<#FFD166>» クリックで参加"
+    invite: "<#FFD166>» クリックで招待"
+    choose: "<#FFD166>» クリックで選択"
+    leave: "<#FFD166>» クリックで退出"

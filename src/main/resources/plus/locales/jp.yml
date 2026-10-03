@@ -11,97 +11,98 @@ play:
     hourglass:
       material: "sand"
       name: "<#CFB410><bold>砂時計"
-      lore: "<dark_gray>You can only stand on blocks for 1 second"
+      lore: "<gray>You can only stand on blocks for 1 second"
 
     practice:
       item:
         material: "white_wool"
         name: "<white><bold>練習"
-        lore: "<dark_gray>Practice specific types of jumps"
+        lore: "<gray>Practice specific types of jumps"
 
       items:
         settings:
           material: "comparator"
           name: "<#E74FA1><bold>練習設定"
-          lore: ""
+          lore: "<#FFD166>» クリックで開く"
 
         one_block:
           material: ""
           name: "<bold>１ブロックジャンプ"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
 
         two_block:
           material: ""
           name: "<bold>２ブロックジャンプ"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
 
         three_block:
           material: ""
           name: "<bold>３ブロックジャンプ"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
 
         four_block:
           material: ""
           name: "<bold>４ブロックジャンプ"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
 
         normal:
           material: ""
           name: "<bold>ノーマル"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
 
         schematics:
           material: ""
           name: "<bold>Schematics"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» クリックで切り替え"
 
         ice:
           material: ""
           name: "<bold>氷"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
 
         slabs:
           material: ""
           name: "<bold>スラブ"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
 
         glass_panes:
           material: ""
           name: "<bold>ガラス板"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
 
         fences:
           material: ""
           name: "<bold>フェンス"
-          lore: "<gray>この設定を変える、クリックします。"
+          lore: "<#FFD166>» クリックで切り替え"
+      name: "練習設定"
 
     wave_trial:
       material: "sand"
       name: "<#1882DE><bold>波試し"
-      lore: "<dark_gray>Go up and down the stairs-simulator!"
+      lore: "<gray>Go up and down the stairs-simulator!"
 
     speed:
       material: "lingering_potion"
       name: "<#1882DE><bold>速度"
-      lore: "<dark_gray>速度は大切!"
+      lore: "<gray>速度は大切!"
 
     super_jump:
       material: "rabbit_foot"
       name: "<#08508E><bold>スーパージャンプ"
-      lore: "<dark_gray>Jump from platform to platform||<dark_gray>while you become faster and faster||<red>This gamemode is very difficult!"
+      lore: "<gray>Jump from platform to platform||<gray>while you become faster and faster||<red>This gamemode is very difficult!"
 
     time_trial:
       material: "clock"
       name: "<#9A0BC7><bold>時間試し"
-      lore: "<dark_gray>Reach a score of 100 as fast as you can"
+      lore: "<gray>Reach a score of 100 as fast as you can"
 
   multi:
-    name: "<white>マルチプレイ"
+    name: "マルチプレイ"
 
     item:
       material: "oak_boat"
       name: "<#0088CB><bold>マルチプレイ"
-      lore: ""
+      lore: "<#FFD166>» クリックでモードを選択"
 
     duels:
       go: "<#1BE3DD><bold>行く！||<reset><gray>First to %d wins!"
@@ -114,7 +115,7 @@ play:
       item:
         material: "red_concrete"
         name: "<#C91212><bold>決闘"
-        lore: "<dark_gray>Race opponents to 100 points!||<dark_gray>If someone falls, they'll be reset to the start."
+        lore: "<gray>Race opponents to 100 points!||<gray>If someone falls, they'll be reset to the start."
 
       start:
         material: "lime_banner"
@@ -124,15 +125,15 @@ play:
     team_survival:
       material: "poppy"
       name: "<#C91212><bold>チームサバイバル"
-      lore: "<dark_gray>Live as long as you can with your entire team||<dark_gray>If someone falls, everyone's back to start"
+      lore: "<gray>Live as long as you can with your entire team||<gray>If someone falls, everyone's back to start"
 
 active:
-  name: "<white>ロビー"
+  name: "ロビー"
 
   item:
     material: "chest"
     name: "<#EA9926><bold>View current lobbies"
-    lore: ""
+    lore: "<#FFD166>» クリックで開く"
 
   head:
     material: ""
@@ -142,22 +143,29 @@ active:
   sort:
     material: "bookshelf"
     name: "<#DEA11F><bold>並べ替えします"
-    lore: ""
+    lore: "<#FFD166>» クリックで変更"
 
   refresh:
     material: "blaze_powder"
     name: "<#2FBC11><bold>リフレッシュ"
-    lore: ""
+    lore: "<#FFD166>» クリックで更新"
+  lobby:
+    name: "%sのロビー"
+    players: "<gray>プレイヤー: %s"
+    mode: "<gray>モード: %s"
+    playing: "<gray>プレイ中:"
+    spectating: "<gray>観戦中:"
+    full: "» 満員、クリックで観戦"
 
 invite:
-  name: "<white>Click to invite"
+  name: "プレイヤーを招待"
   message: "<gray>You've been invited by <#F55252><bold>%s<reset><gray> to join their <#F37777><bold>%s<reset><gray> game!||<reset><gray>Use <#FAB4B4><bold>/parkour join %s<reset><gray> to join!"
   success: "<gray>You've invited %s."
 
   item:
     material: "elytra"
     name: "<#2B97E2><bold>Invite"
-    lore: ""
+    lore: "<#FFD166>» クリックで開く"
 
   head:
     material: ""

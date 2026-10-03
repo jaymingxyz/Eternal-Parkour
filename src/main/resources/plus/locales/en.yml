@@ -11,97 +11,98 @@ play:
     hourglass:
       material: "sand"
       name: "<#CFB410><bold>Hourglass"
-      lore: "<dark_gray>You can only stand on blocks for half a second"
+      lore: "<gray>You can only stand on a block||<gray>for half a second."
 
     practice:
       item:
         material: "white_wool"
         name: "<white><bold>Practice"
-        lore: "<dark_gray>Practice specific types of jumps"
+        lore: "<gray>Practise specific kinds of jumps."
 
       items:
         settings:
           material: "comparator"
           name: "<#E74FA1><bold>Practice Settings"
-          lore: ""
+          lore: "<#FFD166>» Click to open"
 
         one_block:
           material: ""
           name: "<bold>One-block jumps"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         two_block:
           material: ""
           name: "<bold>Two-block jumps"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         three_block:
           material: ""
           name: "<bold>Three-block jumps"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         four_block:
           material: ""
           name: "<bold>Four-block jumps"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         normal:
           material: ""
           name: "<bold>Normal"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         schematics:
           material: ""
           name: "<bold>Schematics"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         ice:
           material: ""
           name: "<bold>Ice"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         slabs:
           material: ""
           name: "<bold>Slabs"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         glass_panes:
           material: ""
           name: "<bold>Glass panes"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
 
         fences:
           material: ""
           name: "<bold>Fences"
-          lore: "<gray>Click to change this setting."
+          lore: "<#FFD166>» Click to toggle"
+      name: "Practice settings"
 
     wave_trial:
       material: "sand"
       name: "<#1882DE><bold>Wave Trial"
-      lore: "<dark_gray>Go up and down the stairs-simulator!"
+      lore: "<gray>Up and down, like endless stairs."
 
     speed:
       material: "lingering_potion"
       name: "<#1882DE><bold>Speed"
-      lore: "<dark_gray>Speed is key!"
+      lore: "<gray>Speed is key!"
 
     super_jump:
       material: "rabbit_foot"
       name: "<#08508E><bold>Super Jump"
-      lore: "<dark_gray>Jump from platform to platform||<dark_gray>while you become faster and faster||<red>This gamemode is very difficult!"
+      lore: "<gray>Jump from platform to platform||<gray>while you get faster and faster.||<red>Very difficult!"
 
     time_trial:
       material: "clock"
       name: "<#9A0BC7><bold>Time Trial"
-      lore: "<dark_gray>Reach a score of 100 as fast as you can"
+      lore: "<gray>Reach a score of 100||<gray>as fast as you can."
 
   multi:
-    name: "<white>Multiplayer"
+    name: "Multiplayer"
 
     item:
       material: "oak_boat"
       name: "<#0088CB><bold>Multiplayer"
-      lore: ""
+      lore: "<gray>Play together with friends.||||<#FFD166>» Click to choose a mode"
 
     duels:
       go: "<#1BE3DD><bold>Go!||<reset><gray>First to %d wins!"
@@ -114,7 +115,7 @@ play:
       item:
         material: "red_concrete"
         name: "<#C91212><bold>Duels"
-        lore: "<dark_gray>Race opponents to 100 points!||<dark_gray>If someone falls, they'll be reset to the start."
+        lore: "<gray>Race your opponents to 100 points.||<gray>Fall, and you're back at the start."
 
       start:
         material: "lime_banner"
@@ -124,15 +125,15 @@ play:
     team_survival:
       material: "poppy"
       name: "<#C91212><bold>Team Survival"
-      lore: "<dark_gray>Live as long as you can with your entire team||<dark_gray>If someone falls, everyone's back to start"
+      lore: "<gray>Survive as long as you can as a team.||<gray>If anyone falls, everyone starts over."
 
 active:
-  name: "<white>Lobbies"
+  name: "Lobbies"
 
   item:
     material: "chest"
-    name: "<#EA9926><bold>View current lobbies"
-    lore: ""
+    name: "<#EA9926><bold>Lobbies"
+    lore: "<gray>Join or watch another lobby.||||<#FFD166>» Click to open"
 
   head:
     material: ""
@@ -142,22 +143,29 @@ active:
   sort:
     material: "bookshelf"
     name: "<#DEA11F><bold>Sort"
-    lore: ""
+    lore: "<#FFD166>» Click to change"
 
   refresh:
     material: "blaze_powder"
     name: "<#2FBC11><bold>Refresh"
-    lore: ""
+    lore: "<#FFD166>» Click to refresh"
+  lobby:
+    name: "%s's lobby"
+    players: "<gray>Players: %s"
+    mode: "<gray>Mode: %s"
+    playing: "<gray>Playing:"
+    spectating: "<gray>Spectating:"
+    full: "» Full, click to spectate"
 
 invite:
-  name: "<white>Click to invite"
+  name: "Invite players"
   message: "<gray>You've been invited by <#F55252>%s<reset><gray> to join their <#F37777><bold>%s<reset><gray> game!<reset><gray>Click or use <#FAB4B4>/parkour join %s<reset><gray> to join!"
   success: "<gray>You've invited %s."
 
   item:
     material: "elytra"
     name: "<#2B97E2><bold>Invite"
-    lore: ""
+    lore: "<gray>Invite someone to your lobby.||||<#FFD166>» Click to open"
 
   head:
     material: ""
@@ -167,4 +175,4 @@ invite:
   lobby:
     material: "paper"
     name: "<#0b55e0><bold>Lobby %s"
-    lore: "<gray>Players can also use||<#346edb><underlined>/parkour join %s||<reset><gray>to join this lobby."
+    lore: "<gray>Players can also join with||<white>/parkour join %s"

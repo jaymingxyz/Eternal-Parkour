@@ -7,31 +7,31 @@
 name: "Français"
 
 main:
-  name: "<white>Parkour"
+  name: "Eternal Parkour"
 
 play:
-  name: "<white>Jouer"
+  name: "Jouer"
   
   item:
     material: "sugar_cane"
     name: "<#60EB76><bold>Jouer"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour ouvrir"
   
   single:
-    name: "<white>Seul"
+    name: "Seul"
     
     item:
       material: "ender_pearl"
       name: "<#6E92B1><bold>Seul"
-      lore: ""
+      lore: "<#FFD166>» Cliquez pour choisir"
     
     default:
       material: "barrel"
       name: "<#6693E7><bold>Defaut"
-      lore: "<dark_gray>Le type de jeu par défaut."
+      lore: "<gray>Le type de jeu par défaut."
   
   spectator:
-    name: "<white>Spectateur"
+    name: "Spectateur"
     
     join: "<#4CB3FF>Vous êtes maintenant un spectateur. Tu peux utiliser \"/parkour\" pour quitter/changer ton mode de jeu."
     action_bar: "<#4CB3FF>Vous êtes un spectateur <gray>- <#4CB3FF>Utilisez \"/parkour\" pour partir."
@@ -42,7 +42,7 @@ play:
     item:
       material: "glass"
       name: "<#39D5AB><bold>Spectateur"
-      lore: ""
+      lore: "<#FFD166>» Cliquez pour choisir"
     
     head:
       material: ""
@@ -50,20 +50,20 @@ play:
       lore: ""
 
 community:
-  name: "<white>Communauté"
+  name: "Communauté"
   
   item:
     material: "oak_boat"
     name: "<#60C9DF><bold>Communauté"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour ouvrir"
   
   leaderboards:
-    name: "<white>Tableau des Scores"
+    name: "Tableau des Scores"
     
     item:
       material: "gold_nugget"
       name: "<#6693E7><bold>Tableau des Scores"
-      lore: ""
+      lore: "<#FFD166>» Cliquez pour ouvrir"
     
     sort:
       material: "bookshelf"
@@ -74,28 +74,29 @@ community:
     head:
       material: ""
       name: "<#6693E7><bold>#%r - %p"
-      lore: "<#5574AF>Score: <gray>%s||<#5574AF>Temps: <gray>%t||<#5574AF>Difficulté: <gray>%d<dark_gray>/1.0"
+      lore: "<#5574AF>Score: <gray>%s||<#5574AF>Temps: <gray>%t||<#5574AF>Difficulté: <gray>%d<gray>/1.0"
+    title: "Classement · %s"
 
 settings:
-  name: "<white>Paramètre"
+  name: "Paramètre"
   
   item:
     material: "comparator"
     name: "<#6086EB><bold>Paramètre"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour ouvrir"
   
   lang:
-    name: "<white>Langue"
+    name: "Langue"
     
     item:
       material: "writable_book"
       name: "<#6693E7><bold>Langue"
-      lore: "<dark_gray>Pour le moment: <#5574AF><bold>%s"
+      lore: "<gray>Pour le moment: <#5574AF><bold>%s||||<#FFD166>» Cliquez pour modifier"
   
   chat:
     material: "crossbow"
     name: "<#20C6BC><bold>Chat"
-    lore: "<dark_gray>Pour le moment: <#17B2CE><bold>%s||<dark_gray>Sélectionnez avec qui vous pouvez parler"
+    lore: "<gray>Pour le moment: <#17B2CE><bold>%s||<gray>Sélectionnez avec qui vous pouvez parler||||<#FFD166>» Cliquez pour modifier"
     values: [ "seulement lobby", "seulement joueurs", "publique" ]
     
     formats:
@@ -110,7 +111,7 @@ settings:
     item:
       material: "redstone"
       name: "<#A10404><bold>Paramètres du Parkour"
-      lore: "<dark_gray>Changez l'apparence de votre parkour."
+      lore: "<gray>Changez l'apparence de votre parkour.||||<#FFD166>» Cliquez pour ouvrir"
     
     items:
       
@@ -120,7 +121,7 @@ settings:
         lore: "<gray>Vous avez un score supérieur à 0,||<gray> ce qui signifie que vous ne pouvez pas changer ce réglage."
       
       styles:
-        name: "<white>Styles"
+        name: "Styles"
 
         style_item:
           material: ""
@@ -130,34 +131,34 @@ settings:
         item:
           material: "crafting_table"
           name: "<#6693E7><bold>Style"
-          lore: "<#5574AF>Pour le moment: <gray>%s||<gray>Choisissez les blocs qui seront utilisés."
+          lore: "<#5574AF>Pour le moment: <gray>%s||<gray>Choisissez les blocs qui seront utilisés.||||<#FFD166>» Cliquez pour choisir"
       
       leads:
         material: "feather"
         name: "<#6693E7><bold>Chef"
-        lore: "<#5574AF>Pour le moment: <gray>%s blocks||<gray>Combien de blocks||<gray>seront générés devant vous."
+        lore: "<#5574AF>Pour le moment: <gray>%s blocks||<gray>Combien de blocks||<gray>seront générés devant vous.||||<#FFD166>» Cliquez pour modifier"
       
       time:
         material: "clock"
         name: "<#6693E7><bold>Temps"
-        lore: "<#5574AF>Pour le moment: <gray>%s||<gray>Votre temps visuel actuel."
+        lore: "<#5574AF>Pour le moment: <gray>%s||<gray>Votre temps visuel actuel.||||<#FFD166>» Cliquez pour modifier"
 
       schematics:
         material: ""
         name: "<#6693E7><bold>Difficulté des schématique"
-        lore: "<#5574AF>Pour le moment: <gray>%s||<gray>La difficulté des schématique"
+        lore: "<#5574AF>Pour le moment: <gray>%s||<gray>La difficulté des schématique||||<#FFD166>» Cliquez pour modifier"
         values: ["<red>désactivé", "<#0DCB07>simple", "<yellow>moyen", "<#FF6C17>dur", "<dark_red>très dur"]
       
       scoreboard:
         material: ""
         name: "Montrer le scoreboard"
-        lore: "<gray>Pour le moment: %s||<gray>S''il est activé, il affiche le scoreboard."
+        lore: "<gray>Pour le moment: %s||<gray>S''il est activé, il affiche le scoreboard.||||<#FFD166>» Cliquez pour activer ou désactiver"
       
       fall_message:
         item:
           material: ""
           name: "Afficher le message de chute"
-          lore: "<gray>Pour le moment: %s||<gray>Si il est activée, elle affiche un message lorsque vous tombez||<gray>avec des infos en plus."
+          lore: "<gray>Pour le moment: %s||<gray>Si il est activée, elle affiche un message lorsque vous tombez||<gray>avec des infos en plus.||||<#FFD166>» Cliquez pour activer ou désactiver"
         
         divider: "<dark_gray><strikethrough>-----------------------------------"
         score: "<#80C7FD><bold>Score <reset><white>%s"
@@ -172,25 +173,26 @@ settings:
       particles:
         material: ""
         name: "Montrer les particules"
-        lore: "<gray>Pour le moment: %s||<gray>S''il est activé, chaque bloc généré||<gray>montrera des particules."
+        lore: "<gray>Pour le moment: %s||<gray>S''il est activé, chaque bloc généré||<gray>montrera des particules.||||<#FFD166>» Cliquez pour activer ou désactiver"
       
       sound:
         material: ""
         name: "Jouer des sons"
-        lore: "<gray>Pour le moment: %s||<gray>S''il est activé, chaque bloc généré||<gray>jouera un sond."
+        lore: "<gray>Pour le moment: %s||<gray>S''il est activé, chaque bloc généré||<gray>jouera un sond.||||<#FFD166>» Cliquez pour activer ou désactiver"
       
       special_blocks:
         material: ""
         name: "Utiliser des blocs spéciaux"
-        lore: "<gray>Pour le moment: %s||<gray>Si activé, utilise des blocs spéciaux comme la glace et les dalles."
+        lore: "<gray>Pour le moment: %s||<gray>Si activé, utilise des blocs spéciaux comme la glace et les dalles.||||<#FFD166>» Cliquez pour activer ou désactiver"
       
       score_difficulty:
         material: ""
         name: "Difficulté du score"
-        lore: "<gray>En ce moment: %s||<gray>Lorsqu''il est activé, plus votre score est élevé,||<gray>plus cela devient difficile."
+        lore: "<gray>En ce moment: %s||<gray>Lorsqu''il est activé, plus votre score est élevé,||<gray>plus cela devient difficile.||||<#FFD166>» Cliquez pour activer ou désactiver"
+    name: "Paramètres du parkour"
 
 lobby:
-  name: "<white>Lobby"
+  name: "Lobby"
 
   other_join: '<dark_green><bold>+ <reset><gray>%s a rejoins le Lobby'
   other_leave: '<red><bold>- <reset><gray>%s à quitté le lobby'
@@ -198,16 +200,16 @@ lobby:
   item:
     material: "iron_ingot"
     name: "<#EB608C><bold>Votre Lobby"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour ouvrir"
   
   visibility:
     material: "firework_rocket"
     name: "<#A1E1DD><bold>Visibility"
-    lore: "<dark_gray>Pour le moment: <#2BD4E2><bold>%s||<dark_gray>Sélectionnez qui peut rejoindre votre lobby."
+    lore: "<gray>Pour le moment: <#2BD4E2><bold>%s||<gray>Sélectionnez qui peut rejoindre votre lobby.||||<#FFD166>» Cliquez pour modifier"
     values: [ "privée", "sur invitation", "publique" ]
   
   player_management:
-    name: "<white>Gérer les joueurs"
+    name: "Gérer les joueurs"
     
     kicked: "<gray>Vous avez été kick de votre lobby par l'owner."
     advice: "<gray>Définissez la visibilité de votre lobby comme étant sur invitation seulement ou privée afin d'éviter que des personnes ne rejoigne."
@@ -217,18 +219,18 @@ lobby:
     item:
       material: "cake"
       name: "<#8DC9E5><bold>Gérer les joueurs"
-      lore: "<dark_gray>Kick ou mute les players ici."
+      lore: "<gray>Kick ou mute les players ici.||||<#FFD166>» Cliquez pour ouvrir"
     
     head:
       material: ""
       name: "<#4BD16D><bold>%s"
       lore: ""
-      top: "<dark_gray>Muté dans le lobby||"
-      bottom: "<#8DE5A3>Clique gauche<dark_gray> pour kick du lobby||<#8DE5A3>Clique droit<dark_gray> pour (un)mute dans le lobby"
+      top: "<gray>Muté dans le lobby||"
+      bottom: "<#8DE5A3>Clique gauche<gray> pour kick du lobby||<#8DE5A3>Clique droit<gray> pour (un)mute dans le lobby"
 
 scoreboard:
   
-  title: "<#FF6464><bold>Parkour Infini"
+  title: "<#FF6464><bold>Eternal Parkour"
   
   lines:
   - "<blue>"
@@ -247,14 +249,44 @@ other:
   quit:
     material: "barrier"
     name: "<#D71F1F><bold>Quitter"
-    lore: ""
+    lore: "<#FFD166>» Cliquez pour quitter"
   
   close:
-    material: "arrow"
+    material: "oak_door"
     name: "<#F5A3A3><bold>Fermé"
-    lore: ""
+    lore: "<gray>Fermer ce menu."
 
   iep:
     material: "elytra"
     name: "<#4800FF><bold>Flying"
-    lore: "<gray>Parkour with elytra!"
+    lore: "<gray>Parkour with elytra!||||<#FFD166>» Cliquez pour choisir"
+  back:
+    material: "arrow"
+    name: "<#F5A3A3><bold>Retour"
+    lore: "<gray>Revenir au menu précédent."
+  previous_page:
+    material: "spectral_arrow"
+    name: "<#FFD166><bold>« Page précédente"
+    lore: "<gray>Page %page% sur %pages%"
+  next_page:
+    material: "spectral_arrow"
+    name: "<#FFD166><bold>Page suivante »"
+    lore: "<gray>Page %page% sur %pages%"
+  empty:
+    material: "cobweb"
+    name: "<gray>Rien pour le moment"
+    lore: ""
+  hints:
+    open: "<#FFD166>» Cliquez pour ouvrir"
+    play: "<#FFD166>» Cliquez pour jouer"
+    view: "<#FFD166>» Cliquez pour voir"
+    spectate: "<#FFD166>» Cliquez pour regarder"
+    select: "<#FFD166>» Cliquez pour choisir"
+    selected: "<#0DCB07>✔ Sélectionné"
+    change: "<#FFD166>» Cliquez pour modifier"
+    toggle: "<#FFD166>» Cliquez pour activer ou désactiver"
+    create: "<#FFD166>» Cliquez pour créer un salon"
+    join: "<#FFD166>» Cliquez pour rejoindre"
+    invite: "<#FFD166>» Cliquez pour inviter"
+    choose: "<#FFD166>» Cliquez pour choisir"
+    leave: "<#FFD166>» Cliquez pour quitter"

@@ -1,14 +1,14 @@
 # 介绍
 
-Infinite Parkour Reborn 在一个插件中整合了 Infinite Parkour、IPPlus 与 Infinite Elytra Parkour 的玩法。Infinite Parkour 及相关原项目由 Efnilite 创作。
+Eternal Parkour 在一个插件中整合了 Infinite Parkour、IPPlus 与 Infinite Elytra Parkour 的玩法。Infinite Parkour 及相关原项目由 Efnilite 创作。
 
 插件提供三个命令入口：
 
-- `/parkour`（别名 `/ip`、`/witp`）：方块跑酷、设置、排行榜和管理功能。
+- `/ep`（别名 `/eternalparkour`、`/parkour`、`/witp`）：方块跑酷、设置、排行榜和管理功能。
 - `/ipp`：多人房间与扩展模式。
 - `/iep`：无限鞘翅跑酷。
 
-全部数据位于 `plugins/IP/`。多人模式文件位于 `plugins/IP/plus/`，鞘翅模式文件位于 `plugins/IP/elytra/`。
+全部数据位于 `plugins/EternalParkour/`。多人模式文件位于 `plugins/EternalParkour/plus/`，鞘翅模式文件位于 `plugins/EternalParkour/elytra/`。
 
 ## 主要功能
 

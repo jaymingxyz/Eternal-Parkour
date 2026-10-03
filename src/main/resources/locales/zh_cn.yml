@@ -7,31 +7,31 @@
 name: "简体中文"
 
 main:
-  name: "<white>跑酷"
+  name: "Eternal Parkour"
 
 play:
-  name: "<white>游戏"
+  name: "游戏"
 
   item:
     material: "sugar_cane"
     name: "<#60EB76><bold>开始游戏"
-    lore: ""
+    lore: "<#FFD166>» 点击打开"
 
   single:
-    name: "<white>单人模式"
+    name: "单人模式"
 
     item:
       material: "ender_pearl"
       name: "<#6E92B1><bold>单人游戏"
-      lore: ""
+      lore: "<#FFD166>» 点击选择"
 
     default:
       material: "barrel"
       name: "<#6693E7><bold>经典"
-      lore: "<dark_gray>经典模式"
+      lore: "<gray>经典模式"
 
   spectator:
-    name: "<white>旁观模式"
+    name: "旁观模式"
 
     join: "<#4CB3FF>你当前处于旁观模式。你可以使用 \"/parkour\" 离开或更改你的游戏模式"
     action_bar: "<#4CB3FF>你当前处于旁观模式 <gray>• <#4CB3FF>使用 \"/parkour\" 离开"
@@ -42,7 +42,7 @@ play:
     item:
       material: "glass"
       name: "<#39D5AB><bold>旁观模式"
-      lore: ""
+      lore: "<#FFD166>» 点击选择"
 
     head:
       material: ""
@@ -50,20 +50,20 @@ play:
       lore: ""
 
 community:
-  name: "<white>排行榜"
+  name: "排行榜"
 
   item:
     material: "oak_boat"
     name: "<#60C9DF><bold>排行榜"
-    lore: ""
+    lore: "<#FFD166>» 点击打开"
 
   leaderboards:
-    name: "<white>跑酷排行榜"
+    name: "跑酷排行榜"
 
     item:
       material: "gold_nugget"
       name: "<#6693E7><bold>跑酷记录"
-      lore: ""
+      lore: "<#FFD166>» 点击打开"
 
     sort:
       material: "bookshelf"
@@ -74,28 +74,29 @@ community:
     head:
       material: ""
       name: "<#6693E7><bold>#%r - %p"
-      lore: "<#5574AF>分数: <gray>%s||<#5574AF>时间: <gray>%t||<#5574AF>难度: <gray>%d<dark_gray>/1.0"
+      lore: "<#5574AF>分数: <gray>%s||<#5574AF>时间: <gray>%t||<#5574AF>难度: <gray>%d<gray>/1.0"
+    title: "排行榜 · %s"
 
 settings:
-  name: "<white>个人设置"
+  name: "个人设置"
 
   item:
     material: "comparator"
     name: "<#6086EB><bold>设置"
-    lore: ""
+    lore: "<#FFD166>» 点击打开"
 
   lang:
-    name: "<white>语言设置"
+    name: "语言设置"
 
     item:
       material: "writable_book"
       name: "<#6693E7><bold>语言设置"
-      lore: "<dark_gray>当前语言: <#5574AF><bold>%s"
+      lore: "<gray>当前语言: <#5574AF><bold>%s||||<#FFD166>» 点击更改"
 
   chat:
     material: "crossbow"
     name: "<#20C6BC><bold>聊天范围"
-    lore: "<dark_gray>当前聊天范围: <#17B2CE><bold>%s||<dark_gray>设置聊天范围"
+    lore: "<gray>当前聊天范围: <#17B2CE><bold>%s||<gray>设置聊天范围||||<#FFD166>» 点击更改"
     values: ["仅大厅", "仅玩家", "公开"]
 
     formats:
@@ -110,7 +111,7 @@ settings:
     item:
       material: "redstone"
       name: "<#A10404><bold>外观设置"
-      lore: "<dark_gray>改变跑酷的外观"
+      lore: "<gray>改变跑酷的外观||||<#FFD166>» 点击打开"
 
     items:
 
@@ -120,7 +121,7 @@ settings:
         lore: "<gray>当你的分数高于0时,||<gray>你将不能更改此设置"
 
       styles:
-        name: "<white>方块外观"
+        name: "方块外观"
 
         style_item:
           material: ""
@@ -130,34 +131,34 @@ settings:
         item:
           material: "crafting_table"
           name: "<#6693E7><bold>方块外观"
-          lore: "<#5574AF>当前外观: <gray>%s||<gray>选择一个你喜欢的方块外观"
+          lore: "<#5574AF>当前外观: <gray>%s||<gray>选择一个你喜欢的方块外观||||<#FFD166>» 点击选择"
 
       leads:
         material: "feather"
         name: "<#6693E7><bold>领路方块数量"
-        lore: "<#5574AF>当前数量: <gray>%s个方块||<gray>将生成在你前面的方块数"
+        lore: "<#5574AF>当前数量: <gray>%s个方块||<gray>将生成在你前面的方块数||||<#FFD166>» 点击更改"
 
       time:
         material: "clock"
         name: "<#6693E7><bold>改变时间"
-        lore: "<#5574AF>当前时间: <gray>%s||<gray>你当前的视觉时间"
+        lore: "<#5574AF>当前时间: <gray>%s||<gray>你当前的视觉时间||||<#FFD166>» 点击更改"
 
       schematics:
         material: ""
         name: "<#6693E7><bold>结构难度"
-        lore: "<#5574AF>当前: <gray>%s||<gray>结构难度"
+        lore: "<#5574AF>当前: <gray>%s||<gray>结构难度||||<#FFD166>» 点击更改"
         values: ["<red>关闭", "<#0DCB07>简单", "<yellow>中等", "<#FF6C17>困难", "<dark_red>地狱"]
 
       scoreboard:
         material: ""
         name: "显示记分板"
-        lore: "<gray>当前状态: %s||<gray>如果启用将会出现记分板"
+        lore: "<gray>当前状态: %s||<gray>如果启用将会出现记分板||||<#FFD166>» 点击切换"
 
       fall_message:
         item:
           material: ""
           name: "显示结算信息"
-          lore: "<gray>当前状态: %s||<gray>如果启用||<gray>当你摔落虚空以后将||<gray>会显示结算消息"
+          lore: "<gray>当前状态: %s||<gray>如果启用||<gray>当你摔落虚空以后将||<gray>会显示结算消息||||<#FFD166>» 点击切换"
 
         divider: "<dark_gray><strikethrough>-----------------------------------"
         score: "<#80C7FD><bold>分数 <reset><white>%s"
@@ -172,25 +173,26 @@ settings:
       particles:
         material: ""
         name: "方块粒子效果"
-        lore: "<gray>当前效果: %s||<gray>如果启用||<gray>每一个方块生成时||<gray>都会显示这个效果"
+        lore: "<gray>当前效果: %s||<gray>如果启用||<gray>每一个方块生成时||<gray>都会显示这个效果||||<#FFD166>» 点击切换"
 
       sound:
         material: ""
         name: "方块声音效果"
-        lore: "<gray>当前状态: %s||<gray>如果启用||<gray>每一个方块生成时||<gray>将播放声音"
+        lore: "<gray>当前状态: %s||<gray>如果启用||<gray>每一个方块生成时||<gray>将播放声音||||<#FFD166>» 点击切换"
 
       special_blocks:
         material: ""
         name: "特殊方块效果"
-        lore: "<gray>当前状态: %s||<gray>如果启用||<gray>将会生成蓝冰与||<gray>台阶等特殊方块"
+        lore: "<gray>当前状态: %s||<gray>如果启用||<gray>将会生成蓝冰与||<gray>台阶等特殊方块||||<#FFD166>» 点击切换"
 
       score_difficulty:
         material: ""
         name: "以分数定难度"
-        lore: "<gray>当前状态: %s||<gray>如果启用||<gray>分数越高||<gray>难度越高"
+        lore: "<gray>当前状态: %s||<gray>如果启用||<gray>分数越高||<gray>难度越高||||<#FFD166>» 点击切换"
+    name: "跑酷设置"
 
 lobby:
-  name: "<white>游戏大厅"
+  name: "游戏大厅"
 
   other_join: '<dark_green><bold>+ <reset><gray>%s 加入了你的大厅'
   other_leave: '<red><bold>- <reset><gray>%s 离开了你的大厅'
@@ -198,16 +200,16 @@ lobby:
   item:
     material: "iron_ingot"
     name: "<#EB608C><bold>游戏大厅"
-    lore: ""
+    lore: "<#FFD166>» 点击打开"
 
   visibility:
     material: "firework_rocket"
     name: "<#A1E1DD><bold>大厅可见范围"
-    lore: "<dark_gray>当前范围: <#2BD4E2><bold>%s||<dark_gray>设置大厅可见范围"
+    lore: "<gray>当前范围: <#2BD4E2><bold>%s||<gray>设置大厅可见范围||||<#FFD166>» 点击更改"
     values: ["私人大厅", "仅限邀请", "公开大厅"]
 
   player_management:
-    name: "<white>管理大厅玩家"
+    name: "管理大厅玩家"
 
     kicked: "<gray>你已被大厅所有者踢出大厅"
     advice: "<gray>将大厅可见性设置为仅限邀请或私有,以避免随机加入的玩家"
@@ -217,18 +219,18 @@ lobby:
     item:
       material: "cake"
       name: "<#8DC9E5><bold>管理大厅玩家"
-      lore: "<dark_gray>在这里踢出或禁言玩家"
+      lore: "<gray>在这里踢出或禁言玩家||||<#FFD166>» 点击打开"
 
     head:
       material: ""
       name: "<#4BD16D><bold>%s"
       lore: ""
-      top: "<dark_gray>大厅禁言||"
-      bottom: "<#8DE5A3>左键点击<dark_gray> 踢出大厅||<#8DE5A3>右键点击<dark_gray>禁言或解除禁言"
+      top: "<gray>大厅禁言||"
+      bottom: "<#8DE5A3>左键点击<gray> 踢出大厅||<#8DE5A3>右键点击<gray>禁言或解除禁言"
 
 scoreboard:
 
-  title: "<#FF6464><bold>无尽跑酷"
+  title: "<#FF6464><bold>Eternal Parkour"
 
   lines:
     - "<blue>"
@@ -247,14 +249,44 @@ other:
   quit:
     material: "barrier"
     name: "<#D71F1F><bold>退出游戏"
-    lore: ""
+    lore: "<#FFD166>» 点击退出"
 
   close:
-    material: "arrow"
+    material: "oak_door"
     name: "<#F5A3A3><bold>关闭菜单"
-    lore: ""
+    lore: "<gray>关闭此菜单"
 
   iep:
     material: "elytra"
     name: "<#4800FF><bold>飞行"
-    lore: "<gray>使用鞘翅进行跑酷!"
+    lore: "<gray>使用鞘翅进行跑酷!||||<#FFD166>» 点击选择"
+  back:
+    material: "arrow"
+    name: "<#F5A3A3><bold>返回"
+    lore: "<gray>返回上一个菜单"
+  previous_page:
+    material: "spectral_arrow"
+    name: "<#FFD166><bold>« 上一页"
+    lore: "<gray>第 %page% / %pages% 页"
+  next_page:
+    material: "spectral_arrow"
+    name: "<#FFD166><bold>下一页 »"
+    lore: "<gray>第 %page% / %pages% 页"
+  empty:
+    material: "cobweb"
+    name: "<gray>这里还什么都没有"
+    lore: ""
+  hints:
+    open: "<#FFD166>» 点击打开"
+    play: "<#FFD166>» 点击开始"
+    view: "<#FFD166>» 点击查看"
+    spectate: "<#FFD166>» 点击观战"
+    select: "<#FFD166>» 点击选择"
+    selected: "<#0DCB07>✔ 已选择"
+    change: "<#FFD166>» 点击更改"
+    toggle: "<#FFD166>» 点击切换"
+    create: "<#FFD166>» 点击创建房间"
+    join: "<#FFD166>» 点击加入"
+    invite: "<#FFD166>» 点击邀请"
+    choose: "<#FFD166>» 点击选择"
+    leave: "<#FFD166>» 点击退出"

@@ -1,18 +1,18 @@
 import { defineConfig } from 'vitepress'
 
-const repo = 'https://github.com/LostUmbrella58/IP-Reborn'
+const repo = 'https://github.com/jaymingxyz/EternalParkour'
 
 export default defineConfig({
-  title: 'Infinite Parkour Reborn',
-  description: 'Documentation for Infinite Parkour Reborn',
-  base: '/IP-Reborn/',
+  title: 'Eternal Parkour',
+  description: 'Documentation for Eternal Parkour',
+  base: '/EternalParkour/',
   cleanUrls: true,
   lastUpdated: true,
   head: [
     ['meta', { name: 'theme-color', content: '#7c3aed' }]
   ],
   sitemap: {
-    hostname: 'https://lostumbrella58.github.io/IP-Reborn/'
+    hostname: 'https://jaymingxyz.github.io/EternalParkour/'
   },
   locales: {
     root: {
@@ -26,7 +26,6 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    logo: 'https://cdn.modrinth.com/data/cached_images/60d2d87882c3a8137076c6d33065b7c750320b64_0.webp',
     socialLinks: [{ icon: 'github', link: repo }],
     search: { provider: 'local' },
     locales: {
@@ -54,7 +53,8 @@ export default defineConfig({
                 { text: 'Permissions', link: '/guide/permissions' },
                 { text: 'Configuration', link: '/guide/configuration' },
                 { text: 'Rewards & schematics', link: '/guide/rewards-schematics' },
-                { text: 'Integrations', link: '/guide/integrations' }
+                { text: 'Integrations', link: '/guide/integrations' },
+                { text: 'Survival servers', link: '/guide/survival-servers' }
               ]
             },
             {
@@ -103,7 +103,8 @@ export default defineConfig({
                 { text: '权限', link: '/zh/guide/permissions' },
                 { text: '配置', link: '/zh/guide/configuration' },
                 { text: '奖励与建筑模板', link: '/zh/guide/rewards-schematics' },
-                { text: '插件联动', link: '/zh/guide/integrations' }
+                { text: '插件联动', link: '/zh/guide/integrations' },
+                { text: '生存服务器', link: '/zh/guide/survival-servers' }
               ]
             },
             {
