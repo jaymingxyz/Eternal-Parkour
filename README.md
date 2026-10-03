@@ -37,7 +37,7 @@ while they play and restored automatically after a crash. See
 
 ## Documentation
 
-- Server owners: the documentation site in `docs/` (`npm ci && npm run docs:build`).
+- Server owners: the documentation site in `docs/`.
 - Changes since Infinite Parkour Reborn: [CHANGES.md](CHANGES.md).
 
 
